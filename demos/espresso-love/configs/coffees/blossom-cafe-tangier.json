@@ -1,0 +1,207 @@
+{
+  "business_name": "Blossom Café",
+  "logo_url": "assets/logo.png",
+  "tagline": "Café floral et douceurs faites maison",
+  "meta_description": "Blossom Café à Tanger : lattes floraux, pâtisseries à la fleur d'oranger et décor verdoyant.",
+  "primary_action": "visit",
+  "phone": "+212 539 33 33 33",
+  "whatsapp": "212600000000",
+  "whatsapp_link": "https://wa.me/212600000000?text=Bonjour%20Blossom Café",
+  "delivery_link": "",
+  "address": "Boulevard Pasteur",
+  "city": "Tanger",
+  "directions_link": "https://www.google.com/maps/dir/?api=1&destination=Blossom+Cafe+Tanger",
+  "google_maps_embed": "https://www.google.com/maps/embed?pb=EXAMPLE_EMBED_URL",
+  "instagram_url": "",
+  "facebook_url": "",
+  "currency": "MAD",
+  "rating_average": "4.8",
+  "review_count": "180",
+  "gallery_note": "tout est fait maison, chaque jour.",
+  "hours": {
+    "0": [
+      [
+        "09:00",
+        "20:00"
+      ]
+    ],
+    "1": [
+      [
+        "08:00",
+        "22:00"
+      ]
+    ],
+    "2": [
+      [
+        "08:00",
+        "22:00"
+      ]
+    ],
+    "3": [
+      [
+        "08:00",
+        "22:00"
+      ]
+    ],
+    "4": [
+      [
+        "08:00",
+        "23:00"
+      ]
+    ],
+    "5": [
+      [
+        "08:00",
+        "23:30"
+      ]
+    ],
+    "6": [
+      [
+        "09:00",
+        "23:00"
+      ]
+    ]
+  },
+  "menu_items": [
+    {
+      "name": "Latte Rose",
+      "description": "Sirop de rose maison, éclats de pistache.",
+      "price": "36 MAD",
+      "image": "assets/menu/latte-rose.jpg",
+      "category": "Boissons"
+    },
+    {
+      "name": "Matcha Fleur d'Oranger",
+      "description": "Matcha cérémonie, note florale.",
+      "price": "38 MAD",
+      "image": "assets/menu/matcha-fleur-d'oranger.jpg",
+      "category": "Boissons"
+    },
+    {
+      "name": "Espresso Blossom",
+      "description": "Doux et fruité, Colombie.",
+      "price": "22 MAD",
+      "image": "assets/menu/espresso-blossom.jpg",
+      "category": "Boissons"
+    },
+    {
+      "name": "Gâteau Amandine",
+      "description": "Amande, eau de fleur d'oranger.",
+      "price": "32 MAD",
+      "image": "assets/menu/gâteau-amandine.jpg",
+      "category": "Pâtisseries"
+    },
+    {
+      "name": "Mille-feuille Baklava",
+      "description": "Croustillant miel-pistache.",
+      "price": "35 MAD",
+      "image": "assets/menu/mille-feuille-baklava.jpg",
+      "category": "Pâtisseries"
+    }
+  ],
+  "features": [
+    {
+      "icon": "leaf",
+      "title": "Jardin d'hiver",
+      "description": "Centaines de plantes sous verrière.",
+      "stat": "300 m² de verdure"
+    },
+    {
+      "icon": "wifi",
+      "title": "Wi-Fi gratuit",
+      "description": "Parfait pour un après-midi entre amis.",
+      "stat": "120 Mb/s"
+    },
+    {
+      "icon": "plug",
+      "title": "Prises aux tables",
+      "description": "Chargez vos appareils librement.",
+      "stat": "+20 prises"
+    },
+    {
+      "icon": "headphones",
+      "title": "Playlist acoustique",
+      "description": "Douceur musicale toute la journée.",
+      "stat": "50 dB max"
+    },
+    {
+      "icon": "snow",
+      "title": "Climatisation",
+      "description": "Confort doux toute l'année.",
+      "stat": "23°C"
+    },
+    {
+      "icon": "coffee",
+      "title": "Grains bio certifiés",
+      "description": "Commerce direct avec les fermes.",
+      "stat": "100% Bio"
+    }
+  ],
+  "gallery": [
+    {
+      "src": "assets/gallery/plat-signature.jpg",
+      "alt": ""
+    },
+    {
+      "src": "assets/gallery/latte-art.jpg",
+      "alt": ""
+    },
+    {
+      "src": "assets/gallery/interieur.jpg",
+      "alt": ""
+    },
+    {
+      "src": "assets/gallery/dessert.jpg",
+      "alt": ""
+    },
+    {
+      "src": "assets/gallery/terrasse.jpg",
+      "alt": ""
+    },
+    {
+      "src": "assets/gallery/barista.jpg",
+      "alt": ""
+    }
+  ],
+  "testimonials": [
+    {
+      "author": "Meryem A.",
+      "source": "Google",
+      "rating": 5,
+      "text": "Un jardin magique en pleine ville. Le latte rose est divin."
+    },
+    {
+      "author": "Karim S.",
+      "source": "Instagram",
+      "rating": 5,
+      "text": "Décor de rêve, pâtisseries délicates. Mon préféré à Tanger."
+    },
+    {
+      "author": "Sofia H.",
+      "source": "Google",
+      "rating": 4,
+      "text": "Très joli cadre familial, service souriant."
+    }
+  ],
+  "theme": {
+    "colors": {
+      "primary": "#9c5f7e",
+      "primary_dark": "#754563",
+      "accent": "#e78fb3",
+      "accent_soft": "#f9dbe8",
+      "bg": "#fdf8fa",
+      "surface": "#fffdfe",
+      "text": "#33222c",
+      "text_muted": "#857078",
+      "border": "#eddfe6",
+      "open": "#2e7d32",
+      "closed": "#c62828",
+      "dark_section": "#3c2430"
+    },
+    "fonts": {
+      "heading": "Fraunces",
+      "body": "Outfit"
+    },
+    "radius": "18px"
+  }
+}

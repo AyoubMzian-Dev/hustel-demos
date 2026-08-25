@@ -1,0 +1,400 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- TEMPLATE VARS (rendered here with sample values from config.json):
+       {{business_name}} {{logo_url}} {{tagline}} {{meta_description}} {{hero_image}} -->
+  <title>Café Kora — Le meilleur café du quartier | Casablanca</title>
+  <meta name="description" content="Café Kora à Casablanca : café de spécialité, pâtisseries maison et grains sélectionnés. Venez nous voir Boulevard d’Anfa.">
+  <meta property="og:title" content="Café Kora — Le meilleur café du quartier">
+  <meta property="og:description" content="Café de spécialité, pâtisseries maison et grains sélectionnés — au cœur de Casablanca.">
+  <meta property="og:image" content="assets/hero.jpg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,500;0,9..144,600;0,9..144,700;1,9..144,500&family=Outfit:wght@400;500;600;700&family=Tajawal:wght@400;500;700;800&display=swap">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body data-primary-action="order">
+
+  <!-- SVG sprite: all icons defined once, referenced with <use> -->
+  <svg xmlns="http://www.w3.org/2000/svg" style="display:none" aria-hidden="true">
+    <symbol id="i-phone" viewBox="0 0 24 24"><path d="M6.6 10.8c1.4 2.8 3.8 5.1 6.6 6.6l2.2-2.2c.3-.3.7-.4 1-.2 1.1.4 2.3.6 3.6.6.6 0 1 .4 1 1V20c0 .6-.4 1-1 1C10.6 21 3 13.4 3 4c0-.6.4-1 1-1h3.5c.6 0 1 .4 1 1 0 1.2.2 2.4.6 3.6.1.3 0 .7-.2 1l-2.3 2.2z"/></symbol>
+    <symbol id="i-whatsapp" viewBox="0 0 24 24"><path d="M12 2a10 10 0 0 0-8.6 15L2 22l5.2-1.4A10 10 0 1 0 12 2zm0 18.2c-1.5 0-3-.4-4.3-1.2l-.3-.2-3 .8.8-3-.2-.3A8.2 8.2 0 1 1 12 20.2zm4.6-6.1c-.3-.1-1.5-.7-1.7-.8-.2-.1-.4-.1-.6.1-.2.3-.6.8-.8 1-.1.2-.3.2-.5.1a6.7 6.7 0 0 1-3.3-2.9c-.3-.4 0-.5.1-.7l.4-.5c.1-.2.1-.3 0-.5l-.8-1.9c-.2-.5-.4-.4-.6-.4h-.5c-.2 0-.5.1-.7.3-.2.3-.9.9-.9 2.2s.9 2.5 1.1 2.7c.1.2 1.9 2.9 4.6 4 .6.3 1.1.5 1.5.6.6.2 1.2.2 1.7.1.5-.1 1.5-.6 1.7-1.2.2-.6.2-1.1.2-1.2-.1-.1-.2-.2-.4-.3z"/></symbol>
+    <symbol id="i-scooter" viewBox="0 0 24 24"><path d="M19.5 12c-.3 0-.7.1-1 .2L17 9h2v-2h-3.3l-1-2H11v2h2.4l1 2-2.6 4.3A3.5 3.5 0 0 0 6.6 14H5v-3H2v2h1.2l1.4 2.6A3.5 3.5 0 1 0 11 16h1.6l3-5 .6 1.2A3.5 3.5 0 1 0 19.5 12zm-13 5.5a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3zm13 0a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3z"/></symbol>
+    <symbol id="i-pin" viewBox="0 0 24 24"><path d="M12 2a7 7 0 0 0-7 7c0 5.2 7 13 7 13s7-7.8 7-13a7 7 0 0 0-7-7zm0 9.5A2.5 2.5 0 1 1 12 6.5a2.5 2.5 0 0 1 0 5z"/></symbol>
+    <symbol id="i-menu" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6zm0 5h18v2H3v-2zm0 5h18v2H3v-2z"/></symbol>
+    <symbol id="i-close" viewBox="0 0 24 24"><path d="m19 6.4L17.6 5 12 10.6 6.4 5 5 6.4 10.6 12 5 17.6 6.4 19 12 13.4 17.6 19 19 17.6 13.4 12 19 6.4z"/></symbol>
+    <symbol id="i-star" viewBox="0 0 24 24"><path d="m12 17.3-6.2 3.7 1.7-7L2 9.2l7.1-.6L12 2l2.9 6.6 7.1.6-5.5 4.8 1.7 7z"/></symbol>
+    <symbol id="i-instagram" viewBox="0 0 24 24"><path d="M7.8 2h8.4A5.8 5.8 0 0 1 22 7.8v8.4A5.8 5.8 0 0 1 16.2 22H7.8A5.8 5.8 0 0 1 2 16.2V7.8A5.8 5.8 0 0 1 7.8 2zm-.2 2A3.6 3.6 0 0 0 4 7.6v8.8A3.6 3.6 0 0 0 7.6 20h8.8a3.6 3.6 0 0 0 3.6-3.6V7.6A3.6 3.6 0 0 0 16.4 4H7.6zM12 7a5 5 0 1 1 0 10 5 5 0 0 1 0-10zm0 2a3 3 0 1 0 0 6 3 3 0 0 0 0-6zm5.3-3.1a1.1 1.1 0 1 1 0 2.2 1.1 1.1 0 0 1 0-2.2z"/></symbol>
+    <symbol id="i-facebook" viewBox="0 0 24 24"><path d="M13.5 22v-8h2.7l.4-3.2h-3.1V8.7c0-.9.3-1.6 1.6-1.6h1.7V4.2c-.3 0-1.3-.1-2.5-.1-2.5 0-4.2 1.5-4.2 4.3v2.4H7.4V14h2.7v8h3.4z"/></symbol>
+    <symbol id="i-arrow-right" viewBox="0 0 24 24"><path d="M4 11h12.2l-4.6-4.6L13 5l7 7-7 7-1.4-1.4 4.6-4.6H4v-2z"/></symbol>
+    <symbol id="i-coffee" viewBox="0 0 24 24"><path d="M2 21h18v-2H2v2zM20 8h-2V5h2v3zm0-5H4v10a4 4 0 0 0 4 4h6a4 4 0 0 0 4-4v-3h2a2 2 0 0 0 2-2V5a2 2 0 0 0-2-2zm0 5h-2V5h2v3z"/></symbol>
+    <symbol id="i-croissant" viewBox="0 0 24 24"><path d="M22 15.5c0-3.6-2.1-8.2-4.6-10.2-.9-.7-2-.6-2.8.1L12 7.7 9.4 5.4c-.8-.7-1.9-.8-2.8-.1C4.1 7.3 2 11.9 2 15.5c0 1 .8 1.9 1.9 1.9.4 0 .8-.1 1.1-.4l1.6-1.2c.5 1.6 1.3 3.2 2.4 4.4.4.5 1 .7 1.6.7h2.8c.6 0 1.2-.2 1.6-.7 1.1-1.2 1.9-2.8 2.4-4.4l1.6 1.2c.3.3.7.4 1.1.4 1.1 0 1.9-.9 1.9-1.9zM7.6 13.9l-2.5 1.9c.2-2.7 1.5-6 3-8l1.6 1.5c-.9 1.3-1.7 3-2.1 4.6zm6.4 5h-4c-1.4-1.7-2.3-4.3-2.3-6.6 0-2.1.7-4.3 1.8-5.7l1.5 1.4c.3.3.7.4 1 .4s.7-.1 1-.4l1.5-1.4c1.1 1.4 1.8 3.6 1.8 5.7 0 2.3-.9 4.9-2.3 6.6zm2.4-5c-.4-1.6-1.2-3.3-2.1-4.6l1.6-1.5c1.5 2 2.8 5.3 3 8l-2.5-1.9z"/></symbol>
+    <symbol id="i-clock" viewBox="0 0 24 24"><path d="M12 2a10 10 0 1 0 0 20 10 10 0 0 0 0-20zm0 18a8 8 0 1 1 0-16 8 8 0 0 1 0 16zm.5-13H11v6l5.2 3.1.8-1.3-4.5-2.7V7z"/></symbol>
+    <symbol id="i-wifi" viewBox="0 0 24 24"><path d="M12 21l3.5-4.4a5.6 5.6 0 0 0-7 0L12 21zm0-18C7.5 3 3.4 4.7.4 7.3l2.2 2.7A13.9 13.9 0 0 1 12 6.8c3.6 0 6.9 1.2 9.4 3.2l2.2-2.7C20.6 4.7 16.5 3 12 3zm0 6.3c-2.9 0-5.5 1-7.6 2.7l2.2 2.7a8.2 8.2 0 0 1 10.8 0l2.2-2.7A11.9 11.9 0 0 0 12 9.3z"/></symbol>
+    <symbol id="i-snow" viewBox="0 0 24 24"><path d="M22 11h-3.9l2-2-1.4-1.4L14.3 12l4.4 4.4 1.4-1.4-2-2H22v-2zM11 13H9.1l-3.6 3.5-1.4-1.4 2-2H2v2h3.9l-2 2 1.4 1.4L9.7 14H11v2.9l-3.5 3.6 1.4 1.4 2.1-2.1V24h2v-4.2l2.1 2.1 1.4-1.4L13 16.9V14h2v-2h-2V9.1l3.5-3.6-1.4-1.4L13 6.2V2h-2v4.2L8.9 4.1 7.5 5.5 11 9.1V13z"/></symbol>
+    <symbol id="i-leaf" viewBox="0 0 24 24"><path d="M6.05 8.05a7.001 7.001 0 0 0-.02 9.88c1.47-3.4 4.09-6.24 7.36-7.93A15.95 15.95 0 0 0 8 19c2.6 0 5.03-.91 6.74-2.63 2.68-2.68 2.79-8.09 2.8-9.94L17.53 6c-.82 0-5.9.14-9.62 2.05h-.01z"/></symbol>
+    <symbol id="i-plug" viewBox="0 0 24 24"><path d="M16 7V3h-2v4h-4V3H8v4H6v6c0 2.2 1.8 4 4 4v4h4v-4c2.2 0 4-1.8 4-4V7h-2z"/></symbol>
+    <symbol id="i-headphones" viewBox="0 0 24 24"><path d="M12 3a9 9 0 0 0-9 9v7a2 2 0 0 0 2 2h3v-8H5v-1a7 7 0 1 1 14 0v1h-3v8h3a2 2 0 0 0 2-2v-7a9 9 0 0 0-9-9z"/></symbol>
+  </svg>
+
+  <!-- ============ 1. STICKY HEADER ============ -->
+  <header class="site-header" id="top">
+    <div class="container header-inner">
+      <a href="#top" class="brand">
+        <img src="{{logo_url}}" alt="Logo Café Kora" class="brand-logo" width="44" height="44"
+             onerror="this.style.display='none'">
+        <span class="brand-name js-business-name">Café Kora</span>
+      </a>
+      <nav class="nav" id="main-nav" aria-label="Navigation principale">
+        <a href="#menu" data-i18n="nav_menu">Menu</a>
+        <a href="#gallery" data-i18n="nav_gallery">Galerie</a>
+        <a href="#avis" data-i18n="nav_reviews">Avis</a>
+        <a href="#horaires" data-i18n="nav_hours">Horaires &amp; Adresse</a>
+      </nav>
+      <span class="open-status" id="open-status" role="status"></span>
+      <div class="lang-switch" role="group" aria-label="Choix de la langue">
+        <button type="button" class="js-lang" data-lang="ar" aria-label="العربية">ع</button>
+        <button type="button" class="js-lang" data-lang="fr" aria-label="Français">FR</button>
+        <button type="button" class="js-lang" data-lang="en" aria-label="English">EN</button>
+      </div>
+      <a href="#" class="btn btn-primary btn-header js-primary-cta">
+        <svg class="icon" aria-hidden="true"><use href="#i-pin"/></svg>
+        <span class="js-label" data-i18n="cta_visit">Venez nous voir</span>
+      </a>
+      <button class="nav-toggle" id="nav-toggle" aria-expanded="false" aria-controls="main-nav" aria-label="Ouvrir le menu">
+        <svg class="icon icon-menu" width="26" height="26"><use href="#i-menu"/></svg>
+        <svg class="icon icon-close" width="26" height="26"><use href="#i-close"/></svg>
+      </button>
+    </div>
+  </header>
+
+  <main>
+
+    <!-- ============ 2. HERO ============ -->
+    <section class="hero" aria-label="Accueil">
+      <div class="container hero-grid">
+        <div class="hero-copy">
+          <p class="hero-kicker" data-i18n="hero_kicker">Café de spécialité · Casablanca</p>
+          <h1 data-i18n-html="hero_title_html">Le meilleur café du quartier, <em>torréfié avec amour</em></h1>
+          <p class="hero-sub" data-i18n="hero_sub">Café de spécialité, pâtisseries maison et grains sélectionnés — chaque jour dès 7h30.</p>
+          <div class="hero-actions">
+            <a href="#" class="btn btn-primary btn-lg js-primary-cta">
+              <svg class="icon" aria-hidden="true"><use href="#i-pin"/></svg>
+              <span class="js-label" data-i18n="cta_visit">Venez nous voir</span>
+            </a>
+            <a href="#menu" class="btn btn-ghost btn-lg">
+              <span data-i18n="cta_view_menu">Voir le menu</span>
+              <svg class="icon icon-dir" aria-hidden="true"><use href="#i-arrow-right"/></svg>
+            </a>
+          </div>
+          <p class="hero-rating" aria-label="Note moyenne 4,8 sur 5">
+            <span class="stars" aria-hidden="true">
+              <svg class="icon"><use href="#i-star"/></svg><svg class="icon"><use href="#i-star"/></svg><svg class="icon"><use href="#i-star"/></svg><svg class="icon"><use href="#i-star"/></svg><svg class="icon"><use href="#i-star"/></svg>
+            </span>
+            <span class="js-rating-text">4,8/5 · sur 212 avis</span>
+          </p>
+        </div>
+        <div class="hero-media">
+          <img src="assets/hero.jpg" alt="Café Kora — latte art et ambiance chaleureuse" fetchpriority="high"
+               onerror="this.remove()">
+        </div>
+      </div>
+    </section>
+
+    <!-- Marquee ribbon -->
+    <div class="marquee" aria-hidden="true">
+      <div class="marquee-track">
+        <span data-i18n="mq_1">Torréfaction locale</span><svg class="icon"><use href="#i-coffee"/></svg>
+        <span data-i18n="mq_2">Grains de spécialité</span><svg class="icon"><use href="#i-croissant"/></svg>
+        <span data-i18n="mq_3">Desserts frais du jour</span><svg class="icon"><use href="#i-coffee"/></svg>
+        <span data-i18n="mq_4">Ouvert dès 7h30</span><svg class="icon"><use href="#i-croissant"/></svg>
+        <span data-i18n="mq_1">Torréfaction locale</span><svg class="icon"><use href="#i-coffee"/></svg>
+        <span data-i18n="mq_2">Grains de spécialité</span><svg class="icon"><use href="#i-croissant"/></svg>
+        <span data-i18n="mq_3">Desserts frais du jour</span><svg class="icon"><use href="#i-coffee"/></svg>
+        <span data-i18n="mq_4">Ouvert dès 7h30</span><svg class="icon"><use href="#i-croissant"/></svg>
+      </div>
+    </div>
+
+    <!-- ============ 3. FEATURES / AMBIANCE ============ -->
+    <section class="section features-section" id="features">
+      <div class="container">
+        <p class="section-kicker" data-i18n="features_kicker">Pourquoi nous</p>
+        <h2 data-i18n="features_title">Plus qu'un Café</h2>
+        <p class="section-sub" data-i18n="features_sub">Ce qui rend le Café Kora unique — pensé pour votre confort.</p>
+        <!-- {{features}} — repeat article.feature-card per amenity -->
+        <div class="features-grid" id="features-grid">
+          <article class="feature-card">
+            <svg class="icon" aria-hidden="true"><use href="#i-wifi"/></svg>
+            <p class="feature-stat" data-i18n="feat_wifi_stat">300 Mb/s</p>
+            <h3 data-i18n="feat_wifi_name">Wi-Fi rapide gratuit</h3>
+            <p data-i18n="feat_wifi_desc">Fibre optique — idéal pour travailler ou streamer.</p>
+          </article>
+          <article class="feature-card">
+            <svg class="icon" aria-hidden="true"><use href="#i-snow"/></svg>
+            <p class="feature-stat" data-i18n="feat_ac_stat">22°C</p>
+            <h3 data-i18n="feat_ac_name">Climatisation</h3>
+            <p data-i18n="feat_ac_desc">Un intérieur frais et confortable toute l'année.</p>
+          </article>
+          <article class="feature-card">
+            <svg class="icon" aria-hidden="true"><use href="#i-leaf"/></svg>
+            <p class="feature-stat" data-i18n="feat_view_stat">24 places</p>
+            <h3 data-i18n="feat_view_name">Vue verte &amp; terrasse</h3>
+            <p data-i18n="feat_view_desc">Détendez-vous face aux arbres, en intérieur comme en extérieur.</p>
+          </article>
+          <article class="feature-card">
+            <svg class="icon" aria-hidden="true"><use href="#i-plug"/></svg>
+            <p class="feature-stat" data-i18n="feat_plug_stat">+30 prises</p>
+            <h3 data-i18n="feat_plug_name">Prises à chaque table</h3>
+            <p data-i18n="feat_plug_desc">Branchez votre laptop, restez aussi longtemps que vous voulez.</p>
+          </article>
+          <article class="feature-card">
+            <svg class="icon" aria-hidden="true"><use href="#i-headphones"/></svg>
+            <p class="feature-stat" data-i18n="feat_chill_stat">55 dB max</p>
+            <h3 data-i18n="feat_chill_name">Ambiance calme</h3>
+            <p data-i18n="feat_chill_desc">Musique douce, coin lecture — parfait pour se concentrer.</p>
+          </article>
+          <article class="feature-card">
+            <svg class="icon" aria-hidden="true"><use href="#i-coffee"/></svg>
+            <p class="feature-stat" data-i18n="feat_beans_stat">100% Arabica</p>
+            <h3 data-i18n="feat_beans_name">Torréfaction de spécialité</h3>
+            <p data-i18n="feat_beans_desc">Des grains sélectionnés et torréfiés localement.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ 4. MENU ============ -->
+    <section class="section menu-section" id="menu">
+      <div class="container container-narrow">
+        <p class="section-kicker" data-i18n="menu_kicker">La carte</p>
+        <h2 data-i18n="menu_title">Notre Menu</h2>
+        <p class="section-sub" data-i18n="menu_sub">Prix en MAD — service continu pendant les heures d'ouverture.</p>
+
+        <!-- {{menu_items}} grouped by category — repeat .menu-category per group.
+             On mobile, items beyond the first 2 per category are collapsed
+             (class .is-extra) — the full list lives on menu.html. -->
+        <div id="menu-groups">
+        <div class="menu-category">
+          <h3 data-i18n="cat_drinks">Boissons</h3>
+          <ul class="menu-list">
+            <li class="menu-row">
+              <div class="menu-row-text">
+                <h4 data-i18n="item_espresso_name">Café Espresso</h4>
+                <p data-i18n="item_espresso_desc">Double shot, grains torréfiés localement.</p>
+              </div>
+              <span class="price">25 MAD</span>
+            </li>
+            <li class="menu-row">
+              <div class="menu-row-text">
+                <h4 data-i18n="item_cappuccino_name">Cappuccino</h4>
+                <p data-i18n="item_cappuccino_desc">Espresso, lait vapeur onctueux, cacao.</p>
+              </div>
+              <span class="price">32 MAD</span>
+            </li>
+            <li class="menu-row is-extra">
+              <div class="menu-row-text">
+                <h4 data-i18n="item_juice_name">Jus Frais du Jour</h4>
+                <p data-i18n="item_juice_desc">Fruits de saison pressés à la commande.</p>
+              </div>
+              <span class="price">35 MAD</span>
+            </li>
+          </ul>
+        </div>
+        <div class="menu-category">
+          <h3 data-i18n="cat_desserts">Pâtisseries</h3>
+          <ul class="menu-list">
+            <li class="menu-row">
+              <div class="menu-row-text">
+                <h4 data-i18n="item_fondant_name">Fondant au Chocolat</h4>
+                <p data-i18n="item_fondant_desc">Cœur coulant, glace vanille artisanale.</p>
+              </div>
+              <span class="price">38 MAD</span>
+            </li>
+            <li class="menu-row is-extra">
+              <div class="menu-row-text">
+                <h4 data-i18n="item_cheesecake_name">Cheesecake Fruits Rouges</h4>
+                <p data-i18n="item_cheesecake_desc">Préparé chaque matin sur place.</p>
+              </div>
+              <span class="price">42 MAD</span>
+            </li>
+          </ul>
+        </div>
+        </div>
+
+        <div class="cta-block">
+          <a href="menu.html" class="btn btn-secondary btn-lg menu-all-btn">
+            <span data-i18n="menu_all">Voir tout le menu</span>
+            <svg class="icon icon-dir" aria-hidden="true"><use href="#i-arrow-right"/></svg>
+          </a>
+          <a href="#" class="btn btn-primary btn-lg js-primary-cta">
+            <svg class="icon" aria-hidden="true"><use href="#i-pin"/></svg>
+            <span class="js-label" data-i18n="cta_visit">Venez nous voir</span>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ 5. GALLERY ============ -->
+    <section class="section gallery-section section-dark" id="gallery">
+      <div class="container">
+        <p class="section-kicker" data-i18n="gallery_kicker">Galerie</p>
+        <h2 data-i18n="gallery_title">En Images</h2>
+        <p class="section-sub" data-i18n="gallery_sub">Nos plats, nos boissons, notre ambiance — tout est fait maison, chaque jour.</p>
+        <!-- {{gallery}} — repeat figure.gallery-item per photo -->
+        <div class="gallery-grid" id="gallery-grid">
+          <figure class="gallery-item gallery-item-lg"><div class="img-slot"></div></figure>
+          <figure class="gallery-item"><div class="img-slot"></div></figure>
+          <figure class="gallery-item"><div class="img-slot"></div></figure>
+          <figure class="gallery-item"><div class="img-slot"></div></figure>
+          <figure class="gallery-item"><div class="img-slot"></div></figure>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ 6. REVIEWS ============ -->
+    <section class="section reviews-section" id="avis">
+      <div class="container">
+        <p class="section-kicker" data-i18n="reviews_kicker">Avis clients</p>
+        <h2 data-i18n="reviews_title">Ce Que Disent Nos Clients</h2>
+        <p class="reviews-summary">
+          <span class="stars" aria-hidden="true">
+            <svg class="icon"><use href="#i-star"/></svg><svg class="icon"><use href="#i-star"/></svg><svg class="icon"><use href="#i-star"/></svg><svg class="icon"><use href="#i-star"/></svg><svg class="icon"><use href="#i-star"/></svg>
+          </span>
+          <strong class="js-rating-avg">4,8/5</strong>
+          <span data-i18n="reviews_of_count">sur 212 avis</span>
+        </p>
+        <!-- {{testimonials}} -->
+        <div class="reviews-grid" id="reviews-grid">
+          <blockquote class="review-card">
+            <p class="stars" aria-label="5 étoiles">
+              <svg class="icon"><use href="#i-star"/></svg><svg class="icon"><use href="#i-star"/></svg><svg class="icon"><use href="#i-star"/></svg><svg class="icon"><use href="#i-star"/></svg><svg class="icon"><use href="#i-star"/></svg>
+            </p>
+            <p data-i18n="review_1">« Le meilleur cappuccino du quartier, sans exagérer. L'ambiance est parfaite pour travailler ou se détendre. »</p>
+            <footer data-i18n="review_1_by">— Aïcha M., Google</footer>
+          </blockquote>
+          <blockquote class="review-card">
+            <p class="stars" aria-label="5 étoiles">
+              <svg class="icon"><use href="#i-star"/></svg><svg class="icon"><use href="#i-star"/></svg><svg class="icon"><use href="#i-star"/></svg><svg class="icon"><use href="#i-star"/></svg><svg class="icon"><use href="#i-star"/></svg>
+            </p>
+            <p data-i18n="review_2">« Service très chaleureux. Commande via WhatsApp prête à l'heure — mon spot préféré pour travailler. »</p>
+            <footer data-i18n="review_2_by">— Karim D., Instagram</footer>
+          </blockquote>
+          <blockquote class="review-card">
+            <p class="stars" aria-label="4 étoiles">
+              <svg class="icon"><use href="#i-star"/></svg><svg class="icon"><use href="#i-star"/></svg><svg class="icon"><use href="#i-star"/></svg><svg class="icon"><use href="#i-star"/></svg><svg class="icon is-muted"><use href="#i-star"/></svg>
+            </p>
+            <p data-i18n="review_3">« Cadre magnifique, desserts faits maison vraiment réussis. On revient chaque week-end en famille. »</p>
+            <footer data-i18n="review_3_by">— Fatou S., Google</footer>
+          </blockquote>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ 7. HOURS + LOCATION + MAP ============ -->
+    <section class="section location-section section-alt" id="horaires">
+      <div class="container location-grid">
+        <div class="location-info">
+          <p class="section-kicker section-kicker-start" data-i18n="location_kicker">Nous trouver</p>
+          <h2 data-i18n="location_title">Horaires &amp; Adresse</h2>
+          <table class="hours-table" id="hours-table">
+            <caption class="visually-hidden" data-i18n="hours_caption">Horaires d'ouverture de Café Kora</caption>
+            <tbody>
+              <tr data-days="1"><th data-i18n="day_1">Lundi</th><td>07:30 – 22:00</td></tr>
+              <tr data-days="2"><th data-i18n="day_2">Mardi</th><td>07:30 – 22:00</td></tr>
+              <tr data-days="3"><th data-i18n="day_3">Mercredi</th><td>07:30 – 22:00</td></tr>
+              <tr data-days="4"><th data-i18n="day_4">Jeudi</th><td>07:30 – 22:00</td></tr>
+              <tr data-days="5"><th data-i18n="day_5">Vendredi</th><td>07:30 – 23:00</td></tr>
+              <tr data-days="6"><th data-i18n="day_6">Samedi</th><td>08:00 – 23:00</td></tr>
+              <tr data-days="0"><th data-i18n="day_0">Dimanche</th><td>08:00 – 20:00</td></tr>
+            </tbody>
+          </table>
+          <address class="address-block">
+            <p class="contact-line">
+              <svg class="icon" aria-hidden="true"><use href="#i-pin"/></svg>
+              <span class="js-address">Boulevard d’Anfa, Casablanca</span>
+            </p>
+            <p class="contact-line">
+              <svg class="icon" aria-hidden="true"><use href="#i-phone"/></svg>
+              <a href="tel:+2250700000000" class="contact-link js-phone js-phone-label">+225 07 00 00 00 00</a>
+            </p>
+            <p class="contact-line">
+              <svg class="icon" aria-hidden="true"><use href="#i-whatsapp"/></svg>
+              <a href="https://wa.me/2250700000000" class="contact-link js-wa-link" target="_blank" rel="noopener" data-i18n="contact_whatsapp">WhatsApp direct</a>
+            </p>
+            <p class="contact-line js-delivery-line hidden">
+              <svg class="icon" aria-hidden="true"><use href="#i-scooter"/></svg>
+              <a href="#" class="contact-link js-delivery-link" target="_blank" rel="noopener" data-i18n="contact_delivery">Commander en livraison</a>
+            </p>
+          </address>
+          <a href="https://www.google.com/maps/dir/?api=1&destination=Boulevard+d%27Anfa,+Casablanca" class="btn btn-secondary" target="_blank" rel="noopener">
+            <span data-i18n="directions_btn">Itinéraire en 1 clic</span>
+            <svg class="icon icon-dir" aria-hidden="true"><use href="#i-arrow-right"/></svg>
+          </a>
+        </div>
+        <div class="map-wrap">
+          <!-- {{google_maps_embed}} -->
+          <iframe
+            src="https://www.google.com/maps?q=Boulevard+d%27Anfa,+Casablanca&output=embed"
+            title="Carte — Café Kora, Casablanca"
+            loading="lazy"
+            allowfullscreen
+            referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ============ 8. FOOTER ============ -->
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div class="footer-top">
+        <div class="footer-brand">
+          <img src="{{logo_url}}" alt="Logo Café Kora" width="48" height="48" loading="lazy"
+               onerror="this.style.display='none'">
+          <p><strong class="js-business-name">Café Kora</strong><br><span data-i18n="footer_tagline">Le meilleur café du quartier, torréfié avec amour</span></p>
+        </div>
+        <div class="footer-contact">
+          <p class="js-address">Boulevard d’Anfa, Casablanca</p>
+          <p><a href="tel:+2250700000000" class="js-phone">+225 07 00 00 00 00</a></p>
+          <p class="social-links">
+            <a href="https://instagram.com/cafekora" target="_blank" rel="noopener" aria-label="Instagram">
+              <svg class="icon" aria-hidden="true"><use href="#i-instagram"/></svg>
+            </a>
+            <a href="https://facebook.com/cafekora" target="_blank" rel="noopener" aria-label="Facebook">
+              <svg class="icon" aria-hidden="true"><use href="#i-facebook"/></svg>
+            </a>
+          </p>
+        </div>
+        <div class="footer-cta">
+          <a href="#" class="btn btn-accent js-primary-cta">
+            <svg class="icon" aria-hidden="true"><use href="#i-pin"/></svg>
+            <span class="js-label" data-i18n="cta_visit">Venez nous voir</span>
+          </a>
+        </div>
+      </div>
+      <p class="footer-wordmark js-business-name" aria-hidden="true">Café Kora</p>
+      <p class="copyright">© <span id="year"></span> <span class="js-business-name">Café Kora</span> — <span data-i18n="rights">Tous droits réservés.</span></p>
+    </div>
+  </footer>
+
+  <!-- ============ STICKY MOBILE CTA BAR ============ -->
+  <div class="sticky-cta" id="sticky-cta">
+    <a href="tel:+2250700000000" class="sticky-phone js-phone" aria-label="Appeler Café Kora">
+      <svg class="icon" aria-hidden="true"><use href="#i-phone"/></svg>
+    </a>
+    <a href="#" class="btn btn-primary btn-sticky js-primary-cta">
+      <svg class="icon" aria-hidden="true"><use href="#i-pin"/></svg>
+      <span class="js-label" data-i18n="cta_visit">Venez nous voir</span>
+    </a>
+  </div>
+
+  <script src="config.js"></script>
+  <script src="locales/ar.js"></script>
+  <script src="locales/fr.js"></script>
+  <script src="locales/en.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="fr" dir="ltr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dar Zellij — Notre carte</title>
+  <meta name="description" content="Découvrez la carte complète de Dar Zellij : entrées, tajines, couscous, desserts et boissons.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@1,500;1,600&family=Marcellus&family=Outfit:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css?v=3">
+</head>
+<body class="page-menu">
+
+  <header class="site-header site-header--plain">
+    <div class="container header-inner">
+      <a class="brand" href="index.html">
+        <span class="brand-mark" aria-hidden="true">DZ</span>
+        <span class="brand-name" data-cfg="name">Dar Zellij</span>
+      </a>
+      <div class="header-actions">
+        <select class="lang-switch" id="langSwitch" aria-label="Langue">
+          <option value="fr">FR</option>
+          <option value="ar">AR</option>
+          <option value="en">EN</option>
+        </select>
+        <a class="btn btn-primary btn-header" data-link="reserve" href="#" data-i18n="hero.ctaPrimary">Réserver une table</a>
+      </div>
+    </div>
+  </header>
+
+  <main class="section menu-page">
+    <!-- soft gold glow decoration -->
+    <div class="menu-glow" aria-hidden="true"></div>
+
+    <div class="container container-narrow">
+      <header class="menu-head">
+        <span class="eyebrow">Saveurs du terroir</span>
+        <h1 class="page-title section-title" data-i18n="menu.title">Notre carte</h1>
+        <p class="menu-subtitle" data-i18n="menu.subtitle"></p>
+      </header>
+
+      <!-- sticky category nav -->
+      <nav class="menu-cats" id="menuCats" aria-label="Catégories de la carte"><!-- injected --></nav>
+
+      <div id="fullMenu"><!-- categories injected --></div>
+
+      <p class="menu-note" data-i18n="menu.note"></p>
+
+      <div class="menu-ctas">
+        <a class="btn btn-primary btn-lg" data-link="reserve" href="#" data-i18n="hero.ctaPrimary">Réserver une table</a>
+        <a class="btn btn-outline btn-lg" href="index.html" data-i18n="nav.home">Accueil</a>
+      </div>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div>
+        <span class="brand-name" data-cfg="name">Dar Zellij</span>
+        <p class="footer-tagline" data-i18n="footer.tagline"></p>
+      </div>
+      <small>© <span id="year"></span> <span data-cfg="name">Dar Zellij</span></small>
+    </div>
+  </footer>
+
+  <div class="mobile-bar">
+    <a class="btn btn-primary btn-block" data-link="reserve" href="#" data-i18n="hero.ctaPrimary">Réserver une table</a>
+  </div>
+
+  <script src="config.js"></script>
+  <script src="script.js?v=9"></script>
+</body>
+</html>

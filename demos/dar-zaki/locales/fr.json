@@ -1,0 +1,230 @@
+{
+  "nav": {
+    "home": "Accueil",
+    "menu": "Carte",
+    "about": "Notre histoire",
+    "gallery": "Galerie",
+    "reviews": "Avis",
+    "contact": "Contact",
+    "reserve": "Réserver une table"
+  },
+  "hero": {
+    "eyebrow": "Marrakech · Médina",
+    "title": "Dar Zellij",
+    "subtitle": "L'âme du Maroc dans chaque assiette",
+    "description": "Au détour d'une ruelle de la médina, laissez-vous guider par les effluves de cumin, safran et fleur d'oranger. Une table d'hôtes où la tradition se savoure à chaque bouchée.",
+    "ctaPrimary": "Réserver une table",
+    "ctaSecondary": "Découvrir la carte"
+  },
+  "about": {
+    "title": "Notre histoire",
+    "text1": "Fondée dans un riad du XVIIe siècle, Dar Zellij perpétue les recettes transmises de mère en fille depuis trois générations. Nos plats mijotent lentement, dans le respect des gestes d'antan.",
+    "text2": "Du zellige bleu de Majorelle aux lanternes ciselées à la main, chaque détail vous plonge au cœur de l'artisanat marocain. Le vendredi, notre couscous sept légumes rassemble familles et voyageurs autour d'une même table.",
+    "statYears": "25 ans de passion",
+    "statDishes": "40+ recettes traditionnelles",
+    "statGuests": "120 couverts par service"
+  },
+  "menu": {
+    "title": "Notre carte",
+    "subtitle": "Une cuisine généreuse, fidèle aux traditions du royaume",
+    "categories": {
+      "starters": "Entrées",
+      "mains": "Plats",
+      "desserts": "Desserts",
+      "drinks": "Boissons"
+    },
+    "items": [
+      {
+        "name": "Zaalouk d'aubergines fumées",
+        "desc": "Aubergines grillées, tomates confites, cumin et coriandre fraîche, servi avec pain maison.",
+        "price": "45 MAD",
+        "category": "starters"
+      },
+      {
+        "name": "Briouates au fromage de chèvre",
+        "desc": "Petits triangles croustillants au miel et sésame.",
+        "price": "55 MAD",
+        "category": "starters"
+      },
+      {
+        "name": "Salade marocaine & taktouka",
+        "desc": "Duo frais de tomates poivrons et poivrons grillés à l'huile d'olive de l'Ourika.",
+        "price": "40 MAD",
+        "category": "starters"
+      },
+      {
+        "name": "Harira fassia",
+        "desc": "Soupe traditionnelle aux lentilles, pois chiches et vermicelles, citron confit.",
+        "price": "35 MAD",
+        "category": "starters"
+      },
+      {
+        "name": "Pastilla au poulet aux amandes",
+        "desc": "Feuilles de warqa dorées, poulet fermier, amandes torréfiées, cannelle et sucre glace.",
+        "price": "140 MAD",
+        "category": "mains"
+      },
+      {
+        "name": "Tajine d'agneau aux pruneaux",
+        "desc": "Épaule d'agneau confite 6 heures, pruneaux moelleux, amandes et sauce au miel.",
+        "price": "165 MAD",
+        "category": "mains"
+      },
+      {
+        "name": "Tajine kefta aux œufs",
+        "desc": "Boulettes de bœuf épicées, sauce tomate relevée, œufs fermiers et persil plat.",
+        "price": "120 MAD",
+        "category": "mains"
+      },
+      {
+        "name": "Couscous sept légumes (vendredi)",
+        "desc": "Semoule roulée à la main, légumes du souk, bouillon safrané et tfaya d'oignons raisins.",
+        "price": "130 MAD",
+        "category": "mains"
+      },
+      {
+        "name": "Tanjia marrakchia",
+        "desc": "Spécialité de Marrakech : jarret de veau mariné au citron beldi et ras el hanout, cuit à l'étouffée.",
+        "price": "155 MAD",
+        "category": "mains"
+      },
+      {
+        "name": "Couscous végétarien",
+        "desc": "Semoule fine, légumes de saison, pois chiches et raisins secs — 100 % végétal.",
+        "price": "110 MAD",
+        "category": "mains"
+      },
+      {
+        "name": "Orange à la cannelle",
+        "desc": "Suprêmes d'orange, cannelle de Ceylan, eau de fleur d'oranger.",
+        "price": "35 MAD",
+        "category": "desserts"
+      },
+      {
+        "name": "Cornes de gazelle maison",
+        "desc": "Pâtisseries aux amandes et fleur d'oranger, préparées chaque matin.",
+        "price": "40 MAD",
+        "category": "desserts"
+      },
+      {
+        "name": "Sfenj & miel",
+        "desc": "Beignets marocains tièdes, miel d'oranger et graines de sésame.",
+        "price": "30 MAD",
+        "category": "desserts"
+      },
+      {
+        "name": "Thé à la menthe",
+        "desc": "Thé vert Gunpowder, menthe nanah du M'goun, servi à la marocaine.",
+        "price": "25 MAD",
+        "category": "drinks"
+      },
+      {
+        "name": "Citronnade beldi",
+        "desc": "Citron pressé, menthe fraîche et eau de source de l'Atlas.",
+        "price": "30 MAD",
+        "category": "drinks"
+      },
+      {
+        "name": "Jus d'avocat-amande",
+        "desc": "Onctueux jus d'avocat, lait d'amande et une pointe de cannelle.",
+        "price": "35 MAD",
+        "category": "drinks"
+      }
+    ],
+    "note": "Prix en dirhams, taxes incluses. Menu végétarien disponible tous les jours.",
+    "downloadLabel": "Télécharger la carte complète (PDF)",
+    "viewFull": "Voir toute la carte"
+  },
+  "features": {
+    "title": "Pourquoi nous choisir",
+    "items": [
+      {
+        "icon": "terrace",
+        "title": "Terrasse panoramique",
+        "desc": "Vue imprenable sur les toits de la médina et la Koutoubia au coucher du soleil."
+      },
+      {
+        "icon": "music",
+        "title": "Musique gnawa live",
+        "desc": "Chaque vendredi soir, des musiciens gnawa font vibrer le patio."
+      },
+      {
+        "icon": "leaf",
+        "title": "Produits du marché",
+        "desc": "Légumes et épices achetés chaque matin au souk, cuisine 100 % halal."
+      },
+      {
+        "icon": "chef",
+        "title": "Chefs de la médina",
+        "desc": "Une équipe de dadas marrakchies qui cuisinent comme à la maison."
+      }
+    ]
+  },
+  "gallery": {
+    "title": "En images",
+    "subtitle": "Un aperçu de nos tables, plats et ambiances"
+  },
+  "reviews": {
+    "title": "Ils ont aimé",
+    "items": [
+      {
+        "name": "Claire D.",
+        "origin": "Lyon, France",
+        "rating": 5,
+        "text": "La meilleure pastilla que j'aie mangée au Maroc ! Le personnel est adorable et la terrasse est magique au coucher du soleil."
+      },
+      {
+        "name": "Omar B.",
+        "origin": "Casablanca, Maroc",
+        "rating": 5,
+        "text": "Une adresse authentique. La tanjia marrakchia est exactement comme celle de ma grand-mère. Je reviens dès que je peux."
+      },
+      {
+        "name": "Sarah K.",
+        "origin": "London, UK",
+        "rating": 4,
+        "text": "Wonderful rooftop dinner — the lamb tagine fell apart at the touch of a fork. Book ahead for Friday couscous!"
+      }
+    ]
+  },
+  "reservation": {
+    "title": "Réservez votre table",
+    "subtitle": "Réponse confirmée sous 2 heures par téléphone ou WhatsApp",
+    "name": "Nom complet",
+    "email": "E-mail",
+    "phone": "Téléphone",
+    "date": "Date",
+    "time": "Heure",
+    "guests": "Nombre de convives",
+    "message": "Demande particulière (allergies, anniversaire…)",
+    "submit": "Envoyer la demande",
+    "success": "Merci ! Votre demande est bien reçue, nous vous confirmons très vite."
+  },
+  "contact": {
+    "title": "Nous trouver",
+    "addressLabel": "Adresse",
+    "hoursLabel": "Horaires d'ouverture",
+    "phoneLabel": "Téléphone",
+    "emailLabel": "E-mail",
+    "directions": "Itinéraire",
+    "call": "Appeler",
+    "whatsapp": "WhatsApp"
+  },
+  "footer": {
+    "tagline": "Cuisine marocaine authentique au cœur de la médina de Marrakech.",
+    "followUs": "Suivez-nous",
+    "rights": "© 2026 Dar Zellij. Tous droits réservés.",
+    "madeIn": "Fait avec ❤️ à Marrakech"
+  },
+  "status": {
+    "open_now": "Ouvert maintenant",
+    "closed_now": "Fermé · ouvre bientôt"
+  },
+  "marquee": [
+    "Cuisine marocaine authentique",
+    "Pastilla & couscous fait maison",
+    "Thé à la menthe",
+    "Au cœur de la médina"
+  ],
+  "reviews_count": "avis"
+}

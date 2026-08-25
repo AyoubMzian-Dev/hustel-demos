@@ -1,0 +1,207 @@
+{
+  "business_name": "Atlas Roastery",
+  "logo_url": "assets/logo.png",
+  "tagline": "Torréfacteur de spécialité au pied de l'Atlas",
+  "meta_description": "Atlas Roastery à Marrakech : micro-torréfaction, cuppings gratuits et café de spécialité dans la médina.",
+  "primary_action": "visit",
+  "phone": "+212 524 11 11 11",
+  "whatsapp": "212600000000",
+  "whatsapp_link": "https://wa.me/212600000000?text=Bonjour%20Atlas Roastery",
+  "delivery_link": "",
+  "address": "Rue Riad Zitoun JDal",
+  "city": "Marrakech",
+  "directions_link": "https://www.google.com/maps/dir/?api=1&destination=Atlas+Roastery+Marrakech",
+  "google_maps_embed": "https://www.google.com/maps/embed?pb=EXAMPLE_EMBED_URL",
+  "instagram_url": "",
+  "facebook_url": "",
+  "currency": "MAD",
+  "rating_average": "4.8",
+  "review_count": "180",
+  "gallery_note": "tout est fait maison, chaque jour.",
+  "hours": {
+    "0": [
+      [
+        "09:00",
+        "20:00"
+      ]
+    ],
+    "1": [
+      [
+        "08:00",
+        "22:00"
+      ]
+    ],
+    "2": [
+      [
+        "08:00",
+        "22:00"
+      ]
+    ],
+    "3": [
+      [
+        "08:00",
+        "22:00"
+      ]
+    ],
+    "4": [
+      [
+        "08:00",
+        "23:00"
+      ]
+    ],
+    "5": [
+      [
+        "08:00",
+        "00:30"
+      ]
+    ],
+    "6": [
+      [
+        "09:00",
+        "23:00"
+      ]
+    ]
+  },
+  "menu_items": [
+    {
+      "name": "Espresso Atlas",
+      "description": "Assemblage maison, corps rond.",
+      "price": "20 MAD",
+      "image": "assets/menu/espresso-atlas.jpg",
+      "category": "Boissons"
+    },
+    {
+      "name": "Cappuccino Safran",
+      "description": "Mousse onctueuse, touche de safran.",
+      "price": "32 MAD",
+      "image": "assets/menu/cappuccino-safran.jpg",
+      "category": "Boissons"
+    },
+    {
+      "name": "Cold Brew Menthe",
+      "description": "Extraction à froid 18h, menthe fraîche.",
+      "price": "30 MAD",
+      "image": "assets/menu/cold-brew-menthe.jpg",
+      "category": "Pâtisseries"
+    },
+    {
+      "name": "Kasbah Brownie",
+      "description": "Brownie aux noix de pécan.",
+      "price": "28 MAD",
+      "image": "assets/menu/kasbah-brownie.jpg",
+      "category": "Pâtisseries"
+    },
+    {
+      "name": "Sfenj French Toast",
+      "description": "Brioche dorée, miel d'oranger.",
+      "price": "45 MAD",
+      "image": "assets/menu/sfenj-french-toast.jpg",
+      "category": "Pâtisseries"
+    }
+  ],
+  "features": [
+    {
+      "icon": "coffee",
+      "title": "Micro-lots exclusifs",
+      "description": "De nouvelles origines chaque mois.",
+      "stat": "8 origines"
+    },
+    {
+      "icon": "wifi",
+      "title": "Wi-Fi rapide",
+      "description": "Connexion stable dans tout l'espace.",
+      "stat": "150 Mb/s"
+    },
+    {
+      "icon": "plug",
+      "title": "Bar de travail",
+      "description": "Grand comptoir avec prises individuelles.",
+      "stat": "18 sièges"
+    },
+    {
+      "icon": "leaf",
+      "title": "Patio ombragé",
+      "description": "Cour intérieure avec orangers.",
+      "stat": "20 places"
+    },
+    {
+      "icon": "headphones",
+      "title": "Cuppings gratuits",
+      "description": "Dégustation guidée chaque samedi.",
+      "stat": "11h Sat"
+    },
+    {
+      "icon": "snow",
+      "title": "Climatisation",
+      "description": "Un refuge frais dans la médina.",
+      "stat": "23°C"
+    }
+  ],
+  "gallery": [
+    {
+      "src": "assets/gallery/plat-signature.jpg",
+      "alt": ""
+    },
+    {
+      "src": "assets/gallery/latte-art.jpg",
+      "alt": ""
+    },
+    {
+      "src": "assets/gallery/interieur.jpg",
+      "alt": ""
+    },
+    {
+      "src": "assets/gallery/dessert.jpg",
+      "alt": ""
+    },
+    {
+      "src": "assets/gallery/terrasse.jpg",
+      "alt": ""
+    },
+    {
+      "src": "assets/gallery/barista.jpg",
+      "alt": ""
+    }
+  ],
+  "testimonials": [
+    {
+      "author": "Hicham T.",
+      "source": "Google",
+      "rating": 5,
+      "text": "Les meilleurs grains de Marrakech. Le cold brew menthe est addictif."
+    },
+    {
+      "author": "Nadia K.",
+      "source": "Instagram",
+      "rating": 5,
+      "text": "Le patio est magnifique, le personnel passionné."
+    },
+    {
+      "author": "Omar L.",
+      "source": "Google",
+      "rating": 4,
+      "text": "Excellent espresso, prix corrects pour la qualité."
+    }
+  ],
+  "theme": {
+    "colors": {
+      "primary": "#7a2e1d",
+      "primary_dark": "#571f13",
+      "accent": "#d99a2b",
+      "accent_soft": "#f4ddb0",
+      "bg": "#fdf6ee",
+      "surface": "#fffdf9",
+      "text": "#1f1a15",
+      "text_muted": "#6f6558",
+      "border": "#ecdcc6",
+      "open": "#2e7d32",
+      "closed": "#c62828",
+      "dark_section": "#2a120b"
+    },
+    "fonts": {
+      "heading": "Fraunces",
+      "body": "Outfit"
+    },
+    "radius": "14px"
+  }
+}

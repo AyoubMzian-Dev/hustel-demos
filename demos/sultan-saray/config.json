@@ -1,0 +1,102 @@
+{
+  "template": "landing_page_restaurant",
+  "brand": {
+    "name": "Sultan Saray",
+    "tagline": {
+      "fr": "Les meilleures grillades d'Agdal",
+      "en": "Agdal's finest grills",
+      "ar": "أفضل مشاوي أكدال"
+    }
+  },
+  "business": {
+    "type": "restaurant",
+    "cuisine": "Turc & grillades",
+    "phone": "+212 537 00 00 00",
+    "email": "contact@sultansaray.ma",
+    "address": {
+      "street": "Av. Fal Ould Oumeir",
+      "district": "Agdal",
+      "city": "Rabat",
+      "postalCode": "10000",
+      "country": "Morocco",
+      "mapsUrl": "https://maps.google.com/?q=Sultan+Saray+Rabat"
+    },
+    "hours": [
+      {
+        "days": {
+          "fr": "Lundi – Jeudi",
+          "en": "Monday – Thursday",
+          "ar": "الاثنين – الخميس"
+        },
+        "open": "12:00",
+        "close": "23:00"
+      },
+      {
+        "days": {
+          "fr": "Vendredi – Samedi",
+          "en": "Friday – Saturday",
+          "ar": "الجمعة – السبت"
+        },
+        "open": "12:00",
+        "close": "00:30"
+      },
+      {
+        "days": {
+          "fr": "Dimanche",
+          "en": "Sunday",
+          "ar": "الأحد"
+        },
+        "open": "12:00",
+        "close": "23:00"
+      }
+    ],
+    "social": {
+      "instagram": "https://www.instagram.com/explore/tags/sultansarayrabat/"
+    },
+    "features": [
+      "halal",
+      "free-wifi",
+      "vegetarian-options"
+    ],
+    "reservation": {
+      "enabled": true,
+      "url": "",
+      "maxPartySize": 10
+    },
+    "whatsapp_spaced": "212 600 000 000"
+  },
+  "seo": {
+    "title": {
+      "fr": "Sultan Saray — Restaurant à Rabat | Agdal",
+      "en": "Sultan Saray — Restaurant in Rabat | Agdal",
+      "ar": "Sultan Saray — مطعم في الرباط"
+    }
+  },
+  "images": {
+    "hero": "/assets/img/restaurant/hero-riad.jpg",
+    "gallery": [
+      "/assets/img/restaurant/tagine-chicken-lemon.jpg",
+      "/assets/img/restaurant/couscous-seven-veg.jpg",
+      "/assets/img/restaurant/pastilla.jpg",
+      "/assets/img/restaurant/mint-tea.jpg"
+    ]
+  },
+  "theme": {
+    "primary": "#5A2A12",
+    "primaryDark": "#5A2A12",
+    "accent": "#E0B15E",
+    "bg": "#0e0d0b",
+    "surface": "#171512",
+    "surface2": "#1e1b17",
+    "text": "#f2efe9",
+    "textMuted": "#a39c8f",
+    "open": "#4caf7d",
+    "closed": "#c25b3b",
+    "overlay": "rgba(14,13,11,.85)"
+  },
+  "rating": {
+    "value": 4.4,
+    "count": 380
+  },
+  "reviewsSample": true
+}

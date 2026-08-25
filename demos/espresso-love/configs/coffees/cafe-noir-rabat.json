@@ -1,0 +1,207 @@
+{
+  "business_name": "Café Noir",
+  "logo_url": "assets/logo.png",
+  "tagline": "L'art du café, réduit à l'essentiel",
+  "meta_description": "Café Noir à Rabat : bar à espresso minimaliste, sélection de grains rares et pâtisseries épurées.",
+  "primary_action": "visit",
+  "phone": "+212 537 22 22 22",
+  "whatsapp": "212600000000",
+  "whatsapp_link": "https://wa.me/212600000000?text=Bonjour%20Café Noir",
+  "delivery_link": "",
+  "address": "Avenue Mohammed V",
+  "city": "Rabat",
+  "directions_link": "https://www.google.com/maps/dir/?api=1&destination=Cafe+Noir+Rabat",
+  "google_maps_embed": "https://www.google.com/maps/embed?pb=EXAMPLE_EMBED_URL",
+  "instagram_url": "",
+  "facebook_url": "",
+  "currency": "MAD",
+  "rating_average": "4.8",
+  "review_count": "180",
+  "gallery_note": "tout est fait maison, chaque jour.",
+  "hours": {
+    "0": [
+      [
+        "09:00",
+        "20:00"
+      ]
+    ],
+    "1": [
+      [
+        "08:00",
+        "22:00"
+      ]
+    ],
+    "2": [
+      [
+        "08:00",
+        "22:00"
+      ]
+    ],
+    "3": [
+      [
+        "08:00",
+        "22:00"
+      ]
+    ],
+    "4": [
+      [
+        "08:00",
+        "23:00"
+      ]
+    ],
+    "5": [
+      [
+        "08:00",
+        "23:30"
+      ]
+    ],
+    "6": [
+      [
+        "09:00",
+        "23:00"
+      ]
+    ]
+  },
+  "menu_items": [
+    {
+      "name": "Espresso Noir",
+      "description": "Signature, notes de cacao noir.",
+      "price": "25 MAD",
+      "image": "assets/menu/espresso-noir.jpg",
+      "category": "Boissons"
+    },
+    {
+      "name": "Ristretto Gold",
+      "description": "Shot court, crema dorée.",
+      "price": "26 MAD",
+      "image": "assets/menu/ristretto-gold.jpg",
+      "category": "Pâtisseries"
+    },
+    {
+      "name": "Flat White",
+      "description": "Velouté, double ristretto.",
+      "price": "34 MAD",
+      "image": "assets/menu/flat-white.jpg",
+      "category": "Pâtisseries"
+    },
+    {
+      "name": "Fondant Noir 70%",
+      "description": "Cœur coulant grand cru.",
+      "price": "40 MAD",
+      "image": "assets/menu/fondant-noir-70%.jpg",
+      "category": "Pâtisseries"
+    },
+    {
+      "name": "Tarte Citron Brûlée",
+      "description": "Crème citron, meringue flambée.",
+      "price": "38 MAD",
+      "image": "assets/menu/tarte-citron-brûlée.jpg",
+      "category": "Pâtisseries"
+    }
+  ],
+  "features": [
+    {
+      "icon": "coffee",
+      "title": "Grains rares",
+      "description": "Sélection micro-lot renouvelée.",
+      "stat": "5 fermes partenaires"
+    },
+    {
+      "icon": "headphones",
+      "title": "Silence étudié",
+      "description": "Acoustique pensée pour la concentration.",
+      "stat": "45 dB max"
+    },
+    {
+      "icon": "wifi",
+      "title": "Wi-Fi dédié travail",
+      "description": "Réseau séparé pour les professionnels.",
+      "stat": "300 Mb/s"
+    },
+    {
+      "icon": "plug",
+      "title": "Comptoir connecté",
+      "description": "Chaque place dispose d'une prise USB-C.",
+      "stat": "12 places"
+    },
+    {
+      "icon": "snow",
+      "title": "Air purifié",
+      "description": "Climatisation et filtration d'air.",
+      "stat": "21°C"
+    },
+    {
+      "icon": "leaf",
+      "title": "Mur végétal",
+      "description": "Une parenthèse verte en pleine ville.",
+      "stat": "120 plantes"
+    }
+  ],
+  "gallery": [
+    {
+      "src": "assets/gallery/plat-signature.jpg",
+      "alt": ""
+    },
+    {
+      "src": "assets/gallery/latte-art.jpg",
+      "alt": ""
+    },
+    {
+      "src": "assets/gallery/interieur.jpg",
+      "alt": ""
+    },
+    {
+      "src": "assets/gallery/dessert.jpg",
+      "alt": ""
+    },
+    {
+      "src": "assets/gallery/terrasse.jpg",
+      "alt": ""
+    },
+    {
+      "src": "assets/gallery/barista.jpg",
+      "alt": ""
+    }
+  ],
+  "testimonials": [
+    {
+      "author": "Imane R.",
+      "source": "Google",
+      "rating": 5,
+      "text": "Minimaliste, précis, parfait. Le meilleur ristretto de Rabat."
+    },
+    {
+      "author": "Anas F.",
+      "source": "Instagram",
+      "rating": 5,
+      "text": "J'y passe chaque matin avant le bureau. Service impeccable."
+    },
+    {
+      "author": "Leïla Z.",
+      "source": "Google",
+      "rating": 5,
+      "text": "Un vrai temple du café, sobre et élégant."
+    }
+  ],
+  "theme": {
+    "colors": {
+      "primary": "#141210",
+      "primary_dark": "#000000",
+      "accent": "#c9a24b",
+      "accent_soft": "#eee2c4",
+      "bg": "#f6f4ef",
+      "surface": "#fffefb",
+      "text": "#161310",
+      "text_muted": "#77705f",
+      "border": "#e2ddd0",
+      "open": "#2e7d32",
+      "closed": "#c62828",
+      "dark_section": "#0c0a08"
+    },
+    "fonts": {
+      "heading": "Fraunces",
+      "body": "Outfit"
+    },
+    "radius": "10px"
+  }
+}

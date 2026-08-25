@@ -1,0 +1,209 @@
+{
+  "business_name": "Cafés Carrion",
+  "logo_url": "assets/logo.png",
+  "tagline": "Maître torréfacteur depuis 1949",
+  "hero_subtitle": "Grains sélectionnés, torréfaction artisanale et un espresso qui a fait ses preuves.",
+  "hero_image": "assets/hero.jpg",
+  "meta_description": "Cafés Carrion à Rabat (Gare Rabat-Agdal) : Grains sélectionnés, torréfaction artisanale et un espresso qui a fait ses preuves.",
+  "primary_action": "visit",
+  "phone": "+212 537 00 00 00",
+  "whatsapp": "212600000000",
+  "whatsapp_link": "https://wa.me/212600000000?text=Bonjour%20Cafés%20Carrion",
+  "delivery_link": "https://glovoapp.com/example-link",
+  "address": "Gare Rabat-Agdal",
+  "city": "Rabat",
+  "directions_link": "https://www.google.com/maps/dir/?api=1&destination=Cafés+Carrion+Rabat",
+  "google_maps_embed": "",
+  "instagram_url": "",
+  "facebook_url": "",
+  "currency": "MAD",
+  "rating_average": "4.6",
+  "review_count": "240",
+  "gallery_note": "tout est fait maison, chaque jour.",
+  "hours": {
+    "0": [
+      [
+        "08:00",
+        "20:00"
+      ]
+    ],
+    "1": [
+      [
+        "07:30",
+        "22:00"
+      ]
+    ],
+    "2": [
+      [
+        "07:30",
+        "22:00"
+      ]
+    ],
+    "3": [
+      [
+        "07:30",
+        "22:00"
+      ]
+    ],
+    "4": [
+      [
+        "07:30",
+        "22:00"
+      ]
+    ],
+    "5": [
+      [
+        "07:30",
+        "23:00"
+      ]
+    ],
+    "6": [
+      [
+        "08:00",
+        "23:00"
+      ]
+    ]
+  },
+  "features": [
+    {
+      "icon": "wifi",
+      "title": "Wi-Fi rapide gratuit",
+      "description": "Fibre optique — idéal pour travailler ou streamer.",
+      "stat": "300 Mb/s"
+    },
+    {
+      "icon": "snow",
+      "title": "Climatisation",
+      "description": "Un intérieur frais et confortable toute l'année.",
+      "stat": "22°C"
+    },
+    {
+      "icon": "leaf",
+      "title": "Vue verte & terrasse",
+      "description": "Détendez-vous face aux arbres, en intérieur comme en extérieur.",
+      "stat": "24 places"
+    },
+    {
+      "icon": "plug",
+      "title": "Prises à chaque table",
+      "description": "Branchez votre laptop, restez aussi longtemps que vous voulez.",
+      "stat": "+30 prises"
+    },
+    {
+      "icon": "headphones",
+      "title": "Ambiance calme",
+      "description": "Musique douce, coin lecture — parfait pour se concentrer.",
+      "stat": "55 dB max"
+    },
+    {
+      "icon": "coffee",
+      "title": "Torréfaction de spécialité",
+      "description": "Des grains sélectionnés et torréfiés localement.",
+      "stat": "100% Arabica"
+    }
+  ],
+  "menu_items": [
+    {
+      "name": "Café Espresso",
+      "description": "Double shot, grains torréfiés localement.",
+      "price": "25 MAD",
+      "image": "assets/menu/espresso.jpg",
+      "category": "Boissons"
+    },
+    {
+      "name": "Cappuccino",
+      "description": "Espresso, lait vapeur onctueux, cacao.",
+      "price": "32 MAD",
+      "image": "assets/menu/cappuccino.jpg",
+      "category": "Boissons"
+    },
+    {
+      "name": "Jus Frais du Jour",
+      "description": "Fruits de saison pressés à la commande.",
+      "price": "35 MAD",
+      "image": "assets/menu/jus.jpg",
+      "category": "Boissons"
+    },
+    {
+      "name": "Fondant au Chocolat",
+      "description": "Cœur coulant, glace vanille artisanale.",
+      "price": "38 MAD",
+      "image": "assets/menu/fondant.jpg",
+      "category": "Pâtisseries"
+    },
+    {
+      "name": "Cheesecake Fruits Rouges",
+      "description": "Préparé chaque matin sur place.",
+      "price": "42 MAD",
+      "image": "assets/menu/cheesecake.jpg",
+      "category": "Pâtisseries"
+    }
+  ],
+  "gallery": [
+    {
+      "src": "assets/gallery/plat-signature.jpg",
+      "alt": "Café Kora — plat signature"
+    },
+    {
+      "src": "assets/gallery/latte-art.jpg",
+      "alt": "Café Kora — café latte art"
+    },
+    {
+      "src": "assets/gallery/interieur.jpg",
+      "alt": "Café Kora — intérieur et ambiance"
+    },
+    {
+      "src": "assets/gallery/dessert.jpg",
+      "alt": "Café Kora — dessert maison"
+    },
+    {
+      "src": "assets/gallery/terrasse.jpg",
+      "alt": "Café Kora — terrasse"
+    },
+    {
+      "src": "assets/gallery/barista.jpg",
+      "alt": "Café Kora — barista au travail"
+    }
+  ],
+  "testimonials": [
+    {
+      "author": "Aïcha M.",
+      "source": "Google",
+      "rating": 5,
+      "text": "Le meilleur cappuccino du quartier, sans exagérer. L'ambiance est parfaite pour travailler ou se détendre."
+    },
+    {
+      "author": "Karim D.",
+      "source": "Instagram",
+      "rating": 5,
+      "text": "Brunch excellent et service très chaleureux. J'ai commandé via WhatsApp, tout était prêt à l'heure."
+    },
+    {
+      "author": "Fatou S.",
+      "source": "Google",
+      "rating": 4,
+      "text": "Cadre magnifique, desserts faits maison vraiment réussis. On revient chaque week-end en famille."
+    }
+  ],
+  "theme": {
+    "colors": {
+      "primary": "#241a11",
+      "primary_dark": "#1b130c",
+      "accent": "#8a5a2b",
+      "accent_soft": "#f3d9bd",
+      "bg": "#f6efe4",
+      "surface": "#fffdf8",
+      "text": "#241a11",
+      "text_muted": "#7d6d5c",
+      "border": "#e8dcc9",
+      "open": "#2e7d32",
+      "closed": "#c62828",
+      "dark_section": "#20170f"
+    },
+    "fonts": {
+      "heading": "Fraunces",
+      "body": "Outfit"
+    },
+    "radius": "18px"
+  }
+}

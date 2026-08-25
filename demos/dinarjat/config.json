@@ -1,0 +1,102 @@
+{
+  "template": "landing_page_restaurant",
+  "brand": {
+    "name": "Dinarjat",
+    "tagline": {
+      "fr": "Un riad, une table, un voyage",
+      "en": "A riad, a table, a journey",
+      "ar": "رياض ومائدة ورحلة"
+    }
+  },
+  "business": {
+    "type": "restaurant",
+    "cuisine": "Gastronomie marocaine",
+    "phone": "+212 537 00 00 00",
+    "email": "contact@dinarjat.ma",
+    "address": {
+      "street": "Rue Belgnaoui",
+      "district": "Médina",
+      "city": "Rabat",
+      "postalCode": "10000",
+      "country": "Morocco",
+      "mapsUrl": "https://maps.google.com/?q=Dinarjat+Rabat"
+    },
+    "hours": [
+      {
+        "days": {
+          "fr": "Lundi – Jeudi",
+          "en": "Monday – Thursday",
+          "ar": "الاثنين – الخميس"
+        },
+        "open": "12:00",
+        "close": "23:00"
+      },
+      {
+        "days": {
+          "fr": "Vendredi – Samedi",
+          "en": "Friday – Saturday",
+          "ar": "الجمعة – السبت"
+        },
+        "open": "12:00",
+        "close": "00:30"
+      },
+      {
+        "days": {
+          "fr": "Dimanche",
+          "en": "Sunday",
+          "ar": "الأحد"
+        },
+        "open": "12:00",
+        "close": "23:00"
+      }
+    ],
+    "social": {
+      "instagram": "https://www.instagram.com/restaurant.dinarjat/"
+    },
+    "features": [
+      "halal",
+      "free-wifi",
+      "vegetarian-options"
+    ],
+    "reservation": {
+      "enabled": true,
+      "url": "",
+      "maxPartySize": 10
+    },
+    "whatsapp_spaced": "212 600 000 000"
+  },
+  "seo": {
+    "title": {
+      "fr": "Dinarjat — Restaurant à Rabat | Médina",
+      "en": "Dinarjat — Restaurant in Rabat | Médina",
+      "ar": "Dinarjat — مطعم في الرباط"
+    }
+  },
+  "images": {
+    "hero": "/assets/img/restaurant/hero-riad.jpg",
+    "gallery": [
+      "/assets/img/restaurant/tagine-chicken-lemon.jpg",
+      "/assets/img/restaurant/couscous-seven-veg.jpg",
+      "/assets/img/restaurant/pastilla.jpg",
+      "/assets/img/restaurant/mint-tea.jpg"
+    ]
+  },
+  "theme": {
+    "primary": "#3A2438",
+    "primaryDark": "#3A2438",
+    "accent": "#B8544A",
+    "bg": "#0e0d0b",
+    "surface": "#171512",
+    "surface2": "#1e1b17",
+    "text": "#f2efe9",
+    "textMuted": "#a39c8f",
+    "open": "#4caf7d",
+    "closed": "#c25b3b",
+    "overlay": "rgba(14,13,11,.85)"
+  },
+  "rating": {
+    "value": 4.5,
+    "count": 520
+  },
+  "reviewsSample": true
+}

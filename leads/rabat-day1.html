@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Rabat Leads — Day 1</title>
+<style>
+  :root{
+    --bg:#0e0f11; --card:#16181b; --line:#26282c;
+    --fg:#e8e6e1; --mut:#8a8d93; --acc:#c9a35c;
+    --sold:#3f9d63; --prog:#c9a35c; --fail:#b5534a; --todo:#5b616b;
+  }
+  *{box-sizing:border-box;margin:0;padding:0}
+  body{background:var(--bg);color:var(--fg);font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;padding:32px 24px;max-width:1080px;margin:0 auto}
+  header{display:flex;align-items:baseline;justify-content:space-between;margin-bottom:28px}
+  h1{font-size:22px;font-weight:600;letter-spacing:.02em}
+  h1 span{color:var(--acc)}
+  .stats{color:var(--mut);font-size:13px;font-variant-numeric:tabular-nums}
+  .filters{display:flex;gap:6px;margin-bottom:24px;flex-wrap:wrap}
+  .filters button{background:none;border:1px solid var(--line);color:var(--mut);padding:6px 14px;border-radius:99px;font-size:12px;cursor:pointer;transition:.15s}
+  .filters button:hover{border-color:var(--acc);color:var(--fg)}
+  .filters button.active{background:var(--acc);border-color:var(--acc);color:#141210;font-weight:600}
+  h2.cat{font-size:12px;text-transform:uppercase;letter-spacing:.14em;color:var(--mut);margin:30px 0 14px;display:flex;align-items:center;gap:10px}
+  h2.cat::after{content:"";flex:1;height:1px;background:var(--line)}
+  .grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(320px,1fr));gap:16px}
+  .lead{background:var(--card);border:1px solid var(--line);border-radius:12px;overflow:hidden;transition:border-color .15s;display:flex;flex-direction:column}
+  .lead:hover{border-color:#3a3d43}
+  .lead.done-sold{border-color:rgba(63,157,99,.45)}
+  .cover{height:120px;background:linear-gradient(135deg,#1d2024,#15171a);position:relative;display:flex;align-items:center;justify-content:center;text-decoration:none;cursor:pointer;overflow:hidden}
+  .cover img{width:100%;height:100%;object-fit:cover;display:block}
+  .monogram{width:52px;height:52px;border-radius:50%;border:1px solid var(--acc);color:var(--acc);display:flex;align-items:center;justify-content:center;font-size:18px;font-weight:600;letter-spacing:.05em}
+  .body{padding:16px;display:flex;flex-direction:column;gap:12px;flex:1}
+  .toprow{display:flex;justify-content:space-between;gap:8px;align-items:flex-start}
+  .name{font-size:15px;font-weight:600}
+  .area{font-size:12px;color:var(--mut)}
+  .status{border:none;border-radius:99px;font-size:10.5px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;padding:5px 12px;cursor:pointer;white-space:nowrap;font-family:inherit}
+  .status.todo{background:#22252a;color:var(--todo)}
+  .status.prog{background:rgba(201,163,92,.15);color:var(--prog)}
+  .status.sold{background:rgba(63,157,99,.18);color:var(--sold)}
+  .status.fail{background:rgba(181,83,74,.15);color:var(--fail)}
+  .note{font-size:12.5px;color:var(--mut);line-height:1.5}
+  .links{display:flex;gap:14px;margin-top:auto;padding-top:4px}
+  .links a{display:inline-flex;align-items:center;gap:5px;color:var(--mut);text-decoration:none;font-size:12px;transition:color .15s}
+  .links a:hover{color:var(--acc)}
+  .links svg{width:14px;height:14px;stroke:currentColor;fill:none;stroke-width:1.8;stroke-linecap:round;stroke-linejoin:round}
+  footer{margin-top:36px;color:var(--mut);font-size:11.5px;text-align:center}
+</style>
+</head>
+<body>
+
+<header>
+  <h1>Rabat Leads — <span>Day 1</span></h1>
+  <div class="stats" id="stats"></div>
+</header>
+
+<div class="filters" id="filters">
+  <button data-f="all" class="active">All</button>
+  <button data-f="todo">To pitch</button>
+  <button data-f="prog">In progress</button>
+  <button data-f="sold">Sold</button>
+  <button data-f="fail">Failed</button>
+</div>
+
+<h2 class="cat">Restaurants</h2>
+<div class="grid">
+
+  <!-- 1 -->
+  <article class="lead" data-id="dar-zaki">
+    <a class="cover" target="_blank" href="https://www.google.com/search?q=Dar+Zaki+Rabat&tbm=isch">
+      <span class="monogram">DZ</span>
+    </a>
+    <div class="body">
+      <div class="toprow">
+        <div><div class="name">Dar Zaki</div><div class="area">Médina · 23 Rue Moulay Brahim</div></div>
+        <button class="status todo">to pitch</button>
+      </div>
+      <p class="note">Top-rated traditional (4.6★, 600+ reviews). High tourist traffic, weak web presence — prime target.</p>
+      <div class="links">
+        <a target="_blank" href="https://www.google.com/maps/search/Dar+Zaki+Rabat"><svg viewBox="0 0 24 24"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>Location</a>
+        <a target="_blank" href="https://www.instagram.com/explore/tags/darzakirabat/"><svg viewBox="0 0 24 24"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="4"/><line x1="17.5" y1="6.5" x2="17.5" y2="6.5"/></svg>Social</a>
+        <a target="_blank" href="tel:+212702700000"><svg viewBox="0 0 24 24"><path d="M22 16.9v3a2 2 0 0 1-2.2 2A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1 1 .4 2 .7 2.9a2 2 0 0 1-.5 2.1L8 10a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.5c.9.3 1.9.6 2.9.7a2 2 0 0 1 1.7 2z"/></svg>Call</a>
+      </div>
+    </div>
+  </article>
+
+  <!-- 2 -->
+  <article class="lead" data-id="dar-el-medina">
+    <a class="cover" target="_blank" href="https://www.google.com/search?q=Dar+El+Medina+Rabat&tbm=isch">
+      <span class="monogram">DM</span>
+    </a>
+    <div class="body">
+      <div class="toprow">
+        <div><div class="name">Dar El Medina</div><div class="area">Souk Al Sabat, Médina</div></div>
+        <button class="status todo">to pitch</button>
+      </div>
+      <p class="note">460+ reviews, strong Instagram (@darelmedinarabat) but no proper website. Menu/reservation gap to sell.</p>
+      <div class="links">
+        <a target="_blank" href="https://www.google.com/maps/search/Dar+El+Medina+Rabat"><svg viewBox="0 0 24 24"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>Location</a>
+        <a target="_blank" href="https://www.instagram.com/darelmedinarabat/"><svg viewBox="0 0 24 24"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="4"/><line x1="17.5" y1="6.5" x2="17.5" y2="6.5"/></svg>@darelmedinarabat</a>
+        <a target="_blank" href="https://www.google.com/search?q=Dar+El+Medina+Rabat+t%C3%A9l%C3%A9phone"><svg viewBox="0 0 24 24"><path d="M22 16.9v3a2 2 0 0 1-2.2 2A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1 1 .4 2 .7 2.9a2 2 0 0 1-.5 2.1L8 10a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.5c.9.3 1.9.6 2.9.7a2 2 0 0 1 1.7 2z"/></svg>Contact</a>
+      </div>
+    </div>
+  </article>
+
+  <!-- 3 -->
+  <article class="lead" data-id="le-dhow">
+    <a class="cover" target="_blank" href="https://www.google.com/search?q=Le+Dhow+Rabat&tbm=isch">
+      <span class="monogram">LD</span>
+    </a>
+    <div class="body">
+      <div class="toprow">
+        <div><div class="name">Le Dhow</div><div class="area">Banks of Bouregreg, Salé side</div></div>
+        <button class="status todo">to pitch</button>
+      </div>
+      <p class="note">Iconic boat-restaurant. Upscale = can pay premium. Site exists but dated — redesign angle.</p>
+      <div class="links">
+        <a target="_blank" href="https://www.google.com/maps/search/Le+Dhow+Rabat"><svg viewBox="0 0 24 24"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>Location</a>
+        <a target="_blank" href="https://www.instagram.com/explore/tags/ledhowrabat/"><svg viewBox="0 0 24 24"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="4"/><line x1="17.5" y1="6.5" x2="17.5" y2="6.5"/></svg>Social</a>
+        <a target="_blank" href="https://www.google.com/search?q=Le+Dhow+Rabat+contact"><svg viewBox="0 0 24 24"><path d="M22 16.9v3a2 2 0 0 1-2.2 2A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1 1 .4 2 .7 2.9a2 2 0 0 1-.5 2.1L8 10a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.5c.9.3 1.9.6 2.9.7a2 2 0 0 1 1.7 2z"/></svg>Contact</a>
+      </div>
+    </div>
+  </article>
+
+  <!-- 4 -->
+  <article class="lead" data-id="sultan-saray">
+    <a class="cover" target="_blank" href="https://www.google.com/search?q=Sultan+Saray+Rabat&tbm=isch">
+      <span class="monogram">SS</span>
+    </a>
+    <div class="body">
+      <div class="toprow">
+        <div><div class="name">Sultan Saray</div><div class="area">Agdal</div></div>
+        <button class="status todo">to pitch</button>
+      </div>
+      <p class="note">Popular Turkish grill in Agdal, recommended by travel guides. Busy local spot, likely minimal web.</p>
+      <div class="links">
+        <a target="_blank" href="https://www.google.com/maps/search/Sultan+Saray+Agdal+Rabat"><svg viewBox="0 0 24 24"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>Location</a>
+        <a target="_blank" href="https://www.instagram.com/explore/tags/sultansarayrabat/"><svg viewBox="0 0 24 24"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="4"/><line x1="17.5" y1="6.5" x2="17.5" y2="6.5"/></svg>Social</a>
+        <a target="_blank" href="https://www.google.com/search?q=Sultan+Saray+Rabat+t%C3%A9l%C3%A9phone"><svg viewBox="0 0 24 24"><path d="M22 16.9v3a2 2 0 0 1-2.2 2A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1 1 .4 2 .7 2.9a2 2 0 0 1-.5 2.1L8 10a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.5c.9.3 1.9.6 2.9.7a2 2 0 0 1 1.7 2z"/></svg>Contact</a>
+      </div>
+    </div>
+  </article>
+
+  <!-- 5 -->
+  <article class="lead" data-id="dinarjat">
+    <a class="cover" target="_blank" href="https://www.google.com/search?q=Restaurant+Dinarjat+Rabat&tbm=isch">
+      <span class="monogram">DJ</span>
+    </a>
+    <div class="body">
+      <div class="toprow">
+        <div><div class="name">Dinarjat</div><div class="area">Médina · Rue Belgnaoui</div></div>
+        <button class="status todo">to pitch</button>
+      </div>
+      <p class="note">Active on Instagram, refined Moroccan cuisine in a riad. Tourist-heavy clientele books online elsewhere — reservation page angle.</p>
+      <div class="links">
+        <a target="_blank" href="https://www.google.com/maps/search/Restaurant+Dinarjat+Rabat"><svg viewBox="0 0 24 24"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>Location</a>
+        <a target="_blank" href="https://www.instagram.com/restaurant.dinarjat/"><svg viewBox="0 0 24 24"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="4"/><line x1="17.5" y1="6.5" x2="17.5" y2="6.5"/></svg>@restaurant.dinarjat</a>
+        <a target="_blank" href="https://www.google.com/search?q=Dinarjat+Rabat+contact"><svg viewBox="0 0 24 24"><path d="M22 16.9v3a2 2 0 0 1-2.2 2A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1 1 .4 2 .7 2.9a2 2 0 0 1-.5 2.1L8 10a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.5c.9.3 1.9.6 2.9.7a2 2 0 0 1 1.7 2z"/></svg>Contact</a>
+      </div>
+    </div>
+  </article>
+
+</div>
+
+<h2 class="cat">Coffee Shops &amp; Cafés</h2>
+<div class="grid">
+
+  <!-- 6 -->
+  <article class="lead" data-id="carrion-agdal">
+    <a class="cover" target="_blank" href="https://www.google.com/search?q=Caf%C3%A9s+Carrion+Rabat+Agdal&tbm=isch">
+      <span class="monogram">CC</span>
+    </a>
+    <div class="body">
+      <div class="toprow">
+        <div><div class="name">Cafés Carrion</div><div class="area">Agdal · Gare Rabat-Agdal + Takaddoum</div></div>
+        <button class="status todo">to pitch</button>
+      </div>
+      <p class="note">Roaster chain, multiple locations, active IG (@cafes.carrion). Brand that should have a real site — multi-page menu + locations.</p>
+      <div class="links">
+        <a target="_blank" href="https://www.google.com/maps/search/Caf%C3%A9s+Carrion+Agdal+Rabat"><svg viewBox="0 0 24 24"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>Location</a>
+        <a target="_blank" href="https://www.instagram.com/cafes.carrion/"><svg viewBox="0 0 24 24"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="4"/><line x1="17.5" y1="6.5" x2="17.5" y2="6.5"/></svg>@cafes.carrion</a>
+        <a target="_blank" href="https://www.google.com/search?q=Caf%C3%A9s+Carrion+Rabat+contact"><svg viewBox="0 0 24 24"><path d="M22 16.9v3a2 2 0 0 1-2.2 2A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1 1 .4 2 .7 2.9a2 2 0 0 1-.5 2.1L8 10a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.5c.9.3 1.9.6 2.9.7a2 2 0 0 1 1.7 2z"/></svg>Contact</a>
+      </div>
+    </div>
+  </article>
+
+  <!-- 7 -->
+  <article class="lead" data-id="espresso-love">
+    <a class="cover" target="_blank" href="https://www.google.com/search?q=Espresso+Love+Rabat&tbm=isch">
+      <span class="monogram">EL</span>
+    </a>
+    <div class="body">
+      <div class="toprow">
+        <div><div class="name">Espresso Love</div><div class="area">Agdal</div></div>
+        <button class="status todo">to pitch</button>
+      </div>
+      <p class="note">Specialty coffee, playful brand voice on IG. Young owner demographic — easy sell on modern one-pager.</p>
+      <div class="links">
+        <a target="_blank" href="https://www.google.com/maps/search/Espresso+Love+Rabat"><svg viewBox="0 0 24 24"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>Location</a>
+        <a target="_blank" href="https://www.instagram.com/explore/tags/espressoloverabat/"><svg viewBox="0 0 24 24"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="4"/><line x1="17.5" y1="6.5" x2="17.5" y2="6.5"/></svg>Social</a>
+        <a target="_blank" href="https://www.google.com/search?q=Espresso+Love+Rabat+t%C3%A9l%C3%A9phone"><svg viewBox="0 0 24 24"><path d="M22 16.9v3a2 2 0 0 1-2.2 2A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1 1 .4 2 .7 2.9a2 2 0 0 1-.5 2.1L8 10a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.5c.9.3 1.9.6 2.9.7a2 2 0 0 1 1.7 2z"/></svg>Contact</a>
+      </div>
+    </div>
+  </article>
+
+  <!-- 8 -->
+  <article class="lead" data-id="la-maison-cafe">
+    <a class="cover" target="_blank" href="https://www.google.com/search?q=La+Maison+Cafe+Rabat&tbm=isch">
+      <span class="monogram">LM</span>
+    </a>
+    <div class="body">
+      <div class="toprow">
+        <div><div class="name">La Maison Café</div><div class="area">Souissi / Agdal</div></div>
+        <button class="status todo">to pitch</button>
+      </div>
+      <p class="note">Aesthetic brunch spot, very Instagrammable. Their whole business is visual — perfect fit for a photo-driven landing page.</p>
+      <div class="links">
+        <a target="_blank" href="https://www.google.com/maps/search/La+Maison+Caf%C3%A9+Rabat"><svg viewBox="0 0 24 24"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>Location</a>
+        <a target="_blank" href="https://www.instagram.com/explore/tags/lamaisoncaferabat/"><svg viewBox="0 0 24 24"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="4"/><line x1="17.5" y1="6.5" x2="17.5" y2="6.5"/></svg>Social</a>
+        <a target="_blank" href="https://www.google.com/search?q=La+Maison+Caf%C3%A9+Rabat+contact"><svg viewBox="0 0 24 24"><path d="M22 16.9v3a2 2 0 0 1-2.2 2A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1 1 .4 2 .7 2.9a2 2 0 0 1-.5 2.1L8 10a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.5c.9.3 1.9.6 2.9.7a2 2 0 0 1 1.7 2z"/></svg>Contact</a>
+      </div>
+    </div>
+  </article>
+
+  <!-- 9 -->
+  <article class="lead" data-id="villa-my-pearl">
+    <a class="cover" target="_blank" href="https://www.google.com/search?q=Villa+My+Pearl+Rabat&tbm=isch">
+      <span class="monogram">VP</span>
+    </a>
+    <div class="body">
+      <div class="toprow">
+        <div><div class="name">Villa My Pearl</div><div class="area">Av. Ibn Sina, Agdal · NEW</div></div>
+        <button class="status todo">to pitch</button>
+      </div>
+      <p class="note">Brand new café-restaurant, still building identity. New businesses grab anything professional fast — best timing window.</p>
+      <div class="links">
+        <a target="_blank" href="https://www.google.com/maps/search/Villa+My+Pearl+Ibn+Sina+Rabat"><svg viewBox="0 0 24 24"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>Location</a>
+        <a target="_blank" href="https://www.instagram.com/villamypearl/"><svg viewBox="0 0 24 24"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="4"/><line x1="17.5" y1="6.5" x2="17.5" y2="6.5"/></svg>@villamypearl</a>
+        <a target="_blank" href="https://www.google.com/search?q=Villa+My+Pearl+Rabat+contact"><svg viewBox="0 0 24 24"><path d="M22 16.9v3a2 2 0 0 1-2.2 2A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1 1 .4 2 .7 2.9a2 2 0 0 1-.5 2.1L8 10a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.5c.9.3 1.9.6 2.9.7a2 2 0 0 1 1.7 2z"/></svg>Contact</a>
+      </div>
+    </div>
+  </article>
+
+  <!-- 10 -->
+  <article class="lead" data-id="hatch-rabat">
+    <a class="cover" target="_blank" href="https://www.google.com/search?q=Hatch+Rabat+cafe&tbm=isch">
+      <span class="monogram">HT</span>
+    </a>
+    <div class="body">
+      <div class="toprow">
+        <div><div class="name">Hatch</div><div class="area">Agdal · Brunch &amp; coffee</div></div>
+        <button class="status todo">to pitch</button>
+      </div>
+      <p class="note">Trendy brunch café, active latte-art content on IG (@hatch_rabat). Same profile as La Maison — visual-first pitch.</p>
+      <div class="links">
+        <a target="_blank" href="https://www.google.com/maps/search/Hatch+brunch+Rabat"><svg viewBox="0 0 24 24"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>Location</a>
+        <a target="_blank" href="https://www.instagram.com/hatch_rabat/"><svg viewBox="0 0 24 24"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="4"/><line x1="17.5" y1="6.5" x2="17.5" y2="6.5"/></svg>@hatch_rabat</a>
+        <a target="_blank" href="https://www.google.com/search?q=Hatch+Rabat+caf%C3%A9+contact"><svg viewBox="0 0 24 24"><path d="M22 16.9v3a2 2 0 0 1-2.2 2A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1 1 .4 2 .7 2.9a2 2 0 0 1-.5 2.1L8 10a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.5c.9.3 1.9.6 2.9.7a2 2 0 0 1 1.7 2z"/></svg>Contact</a>
+      </div>
+    </div>
+  </article>
+
+</div>
+
+<footer>Status is saved locally in your browser. Click the cover to see photos · click the badge to cycle status.</footer>
+
+<script>
+const ORDER = ['todo','prog','sold','fail'];
+const LABEL = {todo:'to pitch', prog:'in progress', sold:'SOLD', fail:'failed'};
+const store = JSON.parse(localStorage.getItem('leads-day1') || '{}');
+
+function apply(el){
+  const id = el.dataset.id;
+  const s = store[id] || 'todo';
+  el.classList.toggle('done-sold', s === 'sold');
+  const btn = el.querySelector('.status');
+  btn.className = 'status ' + s;
+  btn.textContent = LABEL[s];
+}
+
+const leads = [...document.querySelectorAll('.lead')];
+leads.forEach(apply);
+
+document.querySelectorAll('.status').forEach(btn => {
+  btn.addEventListener('click', () => {
+    const el = btn.closest('.lead');
+    const cur = store[el.dataset.id] || 'todo';
+    const next = ORDER[(ORDER.indexOf(cur) + 1) % ORDER.length];
+    store[el.dataset.id] = next;
+    localStorage.setItem('leads-day1', JSON.stringify(store));
+    apply(el);
+    stats();
+  });
+});
+
+let filter = 'all';
+document.querySelectorAll('#filters button').forEach(b => {
+  b.addEventListener('click', () => {
+    document.querySelectorAll('#filters button').forEach(x => x.classList.remove('active'));
+    b.classList.add('active');
+    filter = b.dataset.f;
+    leads.forEach(el => {
+      const s = store[el.dataset.id] || 'todo';
+      el.style.display = (filter === 'all' || s === filter) ? '' : 'none';
+    });
+    document.querySelectorAll('h2.cat').forEach(h => {
+      let vis = 0;
+      let n = h.nextElementSibling;
+      n.querySelectorAll('.lead').forEach(l => { if(l.style.display !== 'none') vis++; });
+      h.style.display = vis ? '' : 'none';
+    });
+  });
+});
+
+function stats(){
+  const c = {todo:0, prog:0, sold:0, fail:0};
+  leads.forEach(el => c[store[el.dataset.id] || 'todo']++);
+  document.getElementById('stats').textContent =
+    `${leads.length} leads · ${c.todo} to pitch · ${c.prog} in progress · ${c.sold} sold · ${c.fail} failed`;
+}
+stats();
+</script>
+</body>
+</html>

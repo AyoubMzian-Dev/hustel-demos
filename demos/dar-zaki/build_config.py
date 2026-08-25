@@ -58,22 +58,22 @@ out = {
 imgs = out["images"]
 
 # per-dish photo map: match each menu item name to a gallery image by keyword
+# dish photos come from the downloaded Maps photos (manifest order)
+_MANIFEST = json.load(open(os.path.join(HERE, "assets", "img", "manifest.json")))
+def _mp(i):
+    return _MANIFEST[i % len(_MANIFEST)].lstrip("/")
 KEYWORDS = [
-    ("pastilla", "pastilla.jpg"), ("zaalouk", "tagine-chicken-lemon.jpg"),
-    ("tagine", "tagine-chicken-lemon.jpg"), ("tajine", "tagine-chicken-lemon.jpg"),
-    ("couscous", "couscous-seven-veg.jpg"), ("tanjia", "tagine-chicken-lemon.jpg"),
-    ("tea", "mint-tea.jpg"), ("orange", "moroccan-sweets.jpg"),
-    ("gazelle", "moroccan-sweets.jpg"), ("sfenj", "moroccan-sweets.jpg"),
-    ("briouat", "moroccan-sweets.jpg"), ("salad", "couscous-seven-veg.jpg"),
-    ("harira", "tagine-chicken-lemon.jpg"), ("bissara", "tagine-chicken-lemon.jpg"),
-    ("zaalouk", "tagine-chicken-lemon.jpg"), ("sweet", "moroccan-sweets.jpg"),
+    ("tagine", 0), ("tajine", 0), ("tanjia", 0),
+    ("pastilla", 1), ("couscous", 2), ("tea", 3), ("the", 3),
+    ("salad", 4), ("harira", 4), ("soup", 4), ("bissara", 4),
 ]
+_DEFAULT_DISH = 5
 def dish_photo(name):
     n = name.lower()
-    for kw, img in KEYWORDS:
+    for kw, idx in KEYWORDS:
         if kw in n:
-            return "assets/img/restaurant/" + img
-    return None
+            return _mp(idx)
+    return _mp(_DEFAULT_DISH)
 
 def localize(p):
     """keep the real extension; just strip leading slash"""

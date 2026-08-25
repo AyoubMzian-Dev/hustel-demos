@@ -3,19 +3,19 @@
   "brand": {
     "name": "Dar Zaki",
     "tagline": {
-      "fr": "Le goût authentique de la médina de Rabat",
-      "en": "The authentic taste of Rabat's medina",
-      "ar": "الطعم الأصيل لمدينة الرباط"
+      "fr": "Saveurs authentiques au cœur de la médina",
+      "en": "Authentic flavors in the heart of the medina",
+      "ar": "نكهات أصيلة في قلب المدينة"
     }
   },
   "business": {
     "type": "restaurant",
-    "cuisine": "Moroccan traditionnel",
-    "phone": "+212 537 00 00 00",
-    "email": "contact@darzaki.ma",
+    "cuisine": "Moroccan",
+    "phone": "",
+    "email": "",
     "address": {
-      "street": "23 Rue Moulay Brahim",
-      "district": "Médina",
+      "street": "Rue Moulay Brahim / Souk Sebbat",
+      "district": "Medina",
       "city": "Rabat",
       "postalCode": "10000",
       "country": "Morocco",
@@ -51,39 +51,51 @@
       }
     ],
     "social": {
-      "instagram": "https://www.instagram.com/explore/tags/darzakirabat/"
+      "instagram": "https://instagram.com/darzellij.marrakech",
+      "facebook": "https://facebook.com/darzellij.marrakech",
+      "tripadvisor": "https://tripadvisor.com/darzellij-marrakech"
     },
     "features": [
+      "rooftop-terrace",
+      "live-gnawa-fridays",
+      "vegetarian-options",
       "halal",
-      "free-wifi",
-      "vegetarian-options"
+      "private-dining",
+      "free-wifi"
     ],
     "reservation": {
       "enabled": true,
-      "url": "",
-      "maxPartySize": 10
+      "url": "https://reservations.darzellij.ma",
+      "maxPartySize": 12
     },
-    "whatsapp_spaced": "212 600 000 000"
+    "whatsapp_spaced": "212 661 234 567"
   },
   "seo": {
     "title": {
-      "fr": "Dar Zaki — Restaurant à Rabat | Médina",
-      "en": "Dar Zaki — Restaurant in Rabat | Médina",
-      "ar": "Dar Zaki — مطعم في الرباط"
+      "fr": "Dar Zellij — Restaurant Marocain à Marrakech | Cuisine traditionnelle & terrasse",
+      "en": "Dar Zellij — Moroccan Restaurant in Marrakech | Traditional Cuisine & Rooftop",
+      "ar": "دار زليج — مطعم مغربي في مراكش | المطبخ التقليدي وسطح فندقي"
+    },
+    "description": {
+      "fr": "Dar Zellij vous accueille au cœur de la médina de Marrakech pour une cuisine marocaine authentique : tajines, couscous du vendredi, pastilla et pâtisseries maison, sur notre terrasse panoramique.",
+      "en": "Dar Zellij welcomes you to the heart of Marrakech's medina for authentic Moroccan cuisine: tagines, Friday couscous, pastilla and homemade pastries on our panoramic rooftop terrace.",
+      "ar": "يرحب بكم دار زليج في قلب مدينة مراكش العتيقة لتذوق أشهى الأطباق المغربية الأصيلة: الطواجن، الكسكس يوم الجمعة، البسطيلة والحلويات التقليدية على سطحنا المطلة على المدينة."
     }
   },
   "images": {
-    "hero": "/assets/img/restaurant/hero-riad.jpg",
+    "hero": "/assets/img/photo1.jpg",
     "gallery": [
-      "/assets/img/restaurant/tagine-chicken-lemon.jpg",
-      "/assets/img/restaurant/couscous-seven-veg.jpg",
-      "/assets/img/restaurant/pastilla.jpg",
-      "/assets/img/restaurant/mint-tea.jpg"
+      "/assets/img/photo10.jpg",
+      "/assets/img/photo11.jpg",
+      "/assets/img/photo12.jpg",
+      "/assets/img/photo13.jpg",
+      "/assets/img/photo14.jpg",
+      "/assets/img/photo15.jpg"
     ]
   },
   "theme": {
     "primary": "#c9a227",
-    "primaryDark": "#c9a227",
+    "primaryDark": "#a8861e",
     "accent": "#c9a227",
     "bg": "#0e0d0b",
     "surface": "#171512",
@@ -95,8 +107,8 @@
     "overlay": "rgba(14,13,11,.85)"
   },
   "rating": {
-    "value": 4.6,
-    "count": 602
+    "value": 4.8,
+    "count": 612
   },
   "reviewsSample": true
 }

@@ -1,24 +1,26 @@
 /* AUTO-GENERATED from config.json by build_config.py — do not edit by hand */
 window.CONFIG = {
   "name": "Dar Zaki",
-  "phone": "+212 537 00 00 00",
-  "email": "contact@darzaki.ma",
-  "whatsapp": "212 600 000 000",
+  "phone": "",
+  "email": "",
+  "whatsapp": "212 661 234 567",
   "address": {
-    "street": "23 Rue Moulay Brahim",
-    "district": "Médina",
+    "street": "Rue Moulay Brahim / Souk Sebbat",
+    "district": "Medina",
     "city": "Rabat",
     "postalCode": "10000",
     "country": "Morocco",
     "mapsQuery": "Dar+Zaki+Rabat"
   },
   "social": {
-    "instagram": "https://www.instagram.com/explore/tags/darzakirabat/"
+    "instagram": "https://instagram.com/darzellij.marrakech",
+    "facebook": "https://facebook.com/darzellij.marrakech",
+    "tripadvisor": "https://tripadvisor.com/darzellij-marrakech"
   },
   "reservation": {
     "enabled": true,
-    "url": "",
-    "maxPartySize": 10
+    "url": "https://reservations.darzellij.ma",
+    "maxPartySize": 12
   },
   "hours": [
     {
@@ -64,81 +66,96 @@ window.CONFIG = {
   ],
   "seo": {
     "title": {
-      "fr": "Dar Zaki — Restaurant à Rabat | Médina",
-      "en": "Dar Zaki — Restaurant in Rabat | Médina",
-      "ar": "Dar Zaki — مطعم في الرباط"
+      "fr": "Dar Zellij — Restaurant Marocain à Marrakech | Cuisine traditionnelle & terrasse",
+      "en": "Dar Zellij — Moroccan Restaurant in Marrakech | Traditional Cuisine & Rooftop",
+      "ar": "دار زليج — مطعم مغربي في مراكش | المطبخ التقليدي وسطح فندقي"
+    },
+    "description": {
+      "fr": "Dar Zellij vous accueille au cœur de la médina de Marrakech pour une cuisine marocaine authentique : tajines, couscous du vendredi, pastilla et pâtisseries maison, sur notre terrasse panoramique.",
+      "en": "Dar Zellij welcomes you to the heart of Marrakech's medina for authentic Moroccan cuisine: tagines, Friday couscous, pastilla and homemade pastries on our panoramic rooftop terrace.",
+      "ar": "يرحب بكم دار زليج في قلب مدينة مراكش العتيقة لتذوق أشهى الأطباق المغربية الأصيلة: الطواجن، الكسكس يوم الجمعة، البسطيلة والحلويات التقليدية على سطحنا المطلة على المدينة."
     }
   },
   "images": {
-    "hero": "assets/img/restaurant/hero-riad.jpg",
+    "hero": "assets/img/photo1.jpg",
     "gallery": [
-      "assets/img/restaurant/tagine-chicken-lemon.jpg",
-      "assets/img/restaurant/couscous-seven-veg.jpg",
-      "assets/img/restaurant/pastilla.jpg",
-      "assets/img/restaurant/mint-tea.jpg"
+      "assets/img/photo10.jpg",
+      "assets/img/photo11.jpg",
+      "assets/img/photo12.jpg",
+      "assets/img/photo13.jpg",
+      "assets/img/photo14.jpg",
+      "assets/img/photo15.jpg"
     ],
     "dishes": [
       {
         "name": "Smoked Eggplant Zaalouk",
-        "src": "assets/img/restaurant/tagine-chicken-lemon.jpg"
+        "src": "assets/img/photo14.jpg"
       },
       {
         "name": "Goat Cheese Briouates",
-        "src": "assets/img/restaurant/moroccan-sweets.jpg"
+        "src": "assets/img/photo14.jpg"
       },
       {
         "name": "Moroccan Salad & Taktouka",
-        "src": "assets/img/restaurant/couscous-seven-veg.jpg"
+        "src": "assets/img/photo13.jpg"
       },
       {
         "name": "Harira Fassia",
-        "src": "assets/img/restaurant/tagine-chicken-lemon.jpg"
+        "src": "assets/img/photo13.jpg"
       },
       {
         "name": "Chicken Pastilla with Almonds",
-        "src": "assets/img/restaurant/pastilla.jpg"
+        "src": "assets/img/photo10.jpg"
       },
       {
         "name": "Lamb Tagine with Prunes",
-        "src": "assets/img/restaurant/tagine-chicken-lemon.jpg"
+        "src": "assets/img/photo1.jpg"
       },
       {
         "name": "Kefta Tagine with Eggs",
-        "src": "assets/img/restaurant/tagine-chicken-lemon.jpg"
+        "src": "assets/img/photo1.jpg"
       },
       {
         "name": "Seven-Vegetable Couscous (Friday)",
-        "src": "assets/img/restaurant/couscous-seven-veg.jpg"
+        "src": "assets/img/photo11.jpg"
       },
       {
         "name": "Tanjia Marrakchia",
-        "src": "assets/img/restaurant/tagine-chicken-lemon.jpg"
+        "src": "assets/img/photo1.jpg"
       },
       {
         "name": "Vegetarian Couscous",
-        "src": "assets/img/restaurant/couscous-seven-veg.jpg"
+        "src": "assets/img/photo11.jpg"
       },
       {
         "name": "Cinnamon Oranges",
-        "src": "assets/img/restaurant/moroccan-sweets.jpg"
+        "src": "assets/img/photo14.jpg"
       },
       {
         "name": "Homemade Gazelle Horns",
-        "src": "assets/img/restaurant/moroccan-sweets.jpg"
+        "src": "assets/img/photo14.jpg"
       },
       {
         "name": "Sfenj & Honey",
-        "src": "assets/img/restaurant/moroccan-sweets.jpg"
+        "src": "assets/img/photo14.jpg"
       },
       {
         "name": "Mint Tea",
-        "src": "assets/img/restaurant/mint-tea.jpg"
+        "src": "assets/img/photo12.jpg"
+      },
+      {
+        "name": "Beldi Lemonade",
+        "src": "assets/img/photo14.jpg"
+      },
+      {
+        "name": "Avocado-Almond Smoothie",
+        "src": "assets/img/photo14.jpg"
       }
     ]
   },
   "theme": {
     "primary": "#c9a227",
-    "primaryDark": "#c9a227",
+    "primaryDark": "#a8861e",
     "accent": "#c9a227",
     "bg": "#0e0d0b",
     "surface": "#171512",
@@ -150,8 +167,8 @@ window.CONFIG = {
     "overlay": "rgba(14,13,11,.85)"
   },
   "rating": {
-    "value": 4.6,
-    "count": 602
+    "value": 4.8,
+    "count": 612
   },
   "reviewsSample": true
 };

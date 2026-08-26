@@ -88,68 +88,132 @@ window.CONFIG = {
     ],
     "dishes": [
       {
-        "name": "Smoked Eggplant Zaalouk",
-        "src": "assets/img/photo14.jpg"
-      },
-      {
-        "name": "Goat Cheese Briouates",
-        "src": "assets/img/photo14.jpg"
-      },
-      {
-        "name": "Moroccan Salad & Taktouka",
+        "name": "Grilled Tomato & Eggplant Salad",
         "src": "assets/img/photo13.jpg"
       },
       {
-        "name": "Harira Fassia",
+        "name": "Zucchini & Tomato Salad",
         "src": "assets/img/photo13.jpg"
       },
       {
-        "name": "Chicken Pastilla with Almonds",
-        "src": "assets/img/photo10.jpg"
+        "name": "Brania — Lamb with Eggplant Fritters",
+        "src": "assets/img/photo14.jpg"
       },
       {
-        "name": "Lamb Tagine with Prunes",
-        "src": "assets/img/photo1.jpg"
+        "name": "Skina — Lamb with Chickpeas",
+        "src": "assets/img/photo14.jpg"
       },
       {
-        "name": "Kefta Tagine with Eggs",
-        "src": "assets/img/photo1.jpg"
+        "name": "Lamb with Candied Prunes",
+        "src": "assets/img/photo14.jpg"
       },
       {
-        "name": "Seven-Vegetable Couscous (Friday)",
+        "name": "Meatballs with Tomatoes & Egg",
+        "src": "assets/img/photo14.jpg"
+      },
+      {
+        "name": "Lamb Shank with Caramelized Figs",
+        "src": "assets/img/photo14.jpg"
+      },
+      {
+        "name": "Chicken with Preserved Lemon & Olives",
+        "src": "assets/img/photo14.jpg"
+      },
+      {
+        "name": "Chicken with Candied Apricots",
+        "src": "assets/img/photo14.jpg"
+      },
+      {
+        "name": "Lamb Couscous with Vegetables & Candied Onions",
         "src": "assets/img/photo11.jpg"
       },
       {
-        "name": "Tanjia Marrakchia",
-        "src": "assets/img/photo1.jpg"
+        "name": "Chicken Couscous with Vegetables & Candied Onions",
+        "src": "assets/img/photo11.jpg"
+      },
+      {
+        "name": "Sausage Couscous with Vegetables & Candied Onions",
+        "src": "assets/img/photo11.jpg"
       },
       {
         "name": "Vegetarian Couscous",
         "src": "assets/img/photo11.jpg"
       },
       {
+        "name": "Chicken & Almond Pastilla",
+        "src": "assets/img/photo10.jpg"
+      },
+      {
+        "name": "Chicken & Dried Fruit Pastilla",
+        "src": "assets/img/photo10.jpg"
+      },
+      {
+        "name": "Chicken & Cashew Pastilla",
+        "src": "assets/img/photo10.jpg"
+      },
+      {
+        "name": "Vegetarian Pastilla — Zucchini, Almonds & Mint",
+        "src": "assets/img/photo10.jpg"
+      },
+      {
+        "name": "Vegetarian Pastilla — Potato, Spinach & Cheese",
+        "src": "assets/img/photo10.jpg"
+      },
+      {
+        "name": "Vegetarian Pastilla — Vegetables",
+        "src": "assets/img/photo10.jpg"
+      },
+      {
         "name": "Cinnamon Oranges",
         "src": "assets/img/photo14.jpg"
       },
       {
-        "name": "Homemade Gazelle Horns",
+        "name": "Assortment of Moroccan Cakes",
         "src": "assets/img/photo14.jpg"
       },
       {
-        "name": "Sfenj & Honey",
+        "name": "Chocolate Cake",
+        "src": "assets/img/photo14.jpg"
+      },
+      {
+        "name": "Almond Paw Cakes",
+        "src": "assets/img/photo14.jpg"
+      },
+      {
+        "name": "Nut & Date Pie",
+        "src": "assets/img/photo14.jpg"
+      },
+      {
+        "name": "Almond & Date Pie",
+        "src": "assets/img/photo14.jpg"
+      },
+      {
+        "name": "Mineral Water 1.5 L",
+        "src": "assets/img/photo14.jpg"
+      },
+      {
+        "name": "Mineral Water 0.5 L",
+        "src": "assets/img/photo14.jpg"
+      },
+      {
+        "name": "Sparkling Water 1 L",
+        "src": "assets/img/photo14.jpg"
+      },
+      {
+        "name": "Sparkling Water 0.5 L",
+        "src": "assets/img/photo14.jpg"
+      },
+      {
+        "name": "Sodas 33 cl (Coca, Coca Zero, Orangina, Sprite)",
+        "src": "assets/img/photo14.jpg"
+      },
+      {
+        "name": "Black Coffee",
         "src": "assets/img/photo14.jpg"
       },
       {
         "name": "Mint Tea",
         "src": "assets/img/photo12.jpg"
-      },
-      {
-        "name": "Beldi Lemonade",
-        "src": "assets/img/photo14.jpg"
-      },
-      {
-        "name": "Avocado-Almond Smoothie",
-        "src": "assets/img/photo14.jpg"
       }
     ]
   },

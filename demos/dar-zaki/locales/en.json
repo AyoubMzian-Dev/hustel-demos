@@ -1,230 +1,328 @@
 {
-  "nav": {
-    "home": "Home",
-    "menu": "Menu",
-    "about": "Our Story",
-    "gallery": "Gallery",
-    "reviews": "Reviews",
-    "contact": "Contact",
-    "reserve": "Book a Table"
+ "nav": {
+  "home": "Home",
+  "menu": "Menu",
+  "about": "Our Story",
+  "gallery": "Gallery",
+  "reviews": "Reviews",
+  "contact": "Contact",
+  "reserve": "Book a Table"
+ },
+ "hero": {
+  "eyebrow": "Marrakech · Medina",
+  "title": "Dar Zellij",
+  "subtitle": "The soul of Morocco in every plate",
+  "description": "Down a quiet alley of the medina, follow the scent of cumin, saffron and orange blossom. A host table where tradition is savored in every bite.",
+  "ctaPrimary": "Book a Table",
+  "ctaSecondary": "Explore the Menu"
+ },
+ "about": {
+  "title": "Our Story",
+  "text1": "Set inside a 17th-century riad, Dar Zellij carries on recipes handed down from mother to daughter across three generations. Our dishes simmer slowly, honoring the gestures of the past.",
+  "text2": "From Majorelle-blue zellij tiles to hand-chased lanterns, every detail immerses you in Moroccan craftsmanship. On Fridays, our seven-vegetable couscous brings families and travelers together around one table.",
+  "statYears": "25 years of passion",
+  "statDishes": "40+ traditional recipes",
+  "statGuests": "120 seats per service"
+ },
+ "menu": {
+  "title": "Our Menu",
+  "subtitle": "Generous cooking, faithful to the kingdom's traditions",
+  "categories": {
+   "starters": "Starters",
+   "tagines": "Tagines",
+   "couscous": "Couscous",
+   "pastillas": "Pastillas",
+   "desserts": "Desserts",
+   "drinks": "Drinks"
   },
-  "hero": {
-    "eyebrow": "Marrakech · Medina",
-    "title": "Dar Zellij",
-    "subtitle": "The soul of Morocco in every plate",
-    "description": "Down a quiet alley of the medina, follow the scent of cumin, saffron and orange blossom. A host table where tradition is savored in every bite.",
-    "ctaPrimary": "Book a Table",
-    "ctaSecondary": "Explore the Menu"
-  },
-  "about": {
-    "title": "Our Story",
-    "text1": "Set inside a 17th-century riad, Dar Zellij carries on recipes handed down from mother to daughter across three generations. Our dishes simmer slowly, honoring the gestures of the past.",
-    "text2": "From Majorelle-blue zellij tiles to hand-chased lanterns, every detail immerses you in Moroccan craftsmanship. On Fridays, our seven-vegetable couscous brings families and travelers together around one table.",
-    "statYears": "25 years of passion",
-    "statDishes": "40+ traditional recipes",
-    "statGuests": "120 seats per service"
-  },
-  "menu": {
-    "title": "Our Menu",
-    "subtitle": "Generous cooking, faithful to the kingdom's traditions",
-    "categories": {
-      "starters": "Starters",
-      "mains": "Main Courses",
-      "desserts": "Desserts",
-      "drinks": "Drinks"
-    },
-    "items": [
-      {
-        "name": "Smoked Eggplant Zaalouk",
-        "desc": "Charred eggplant, slow-cooked tomatoes, cumin and fresh cilantro, served with homemade bread.",
-        "price": "45 MAD",
-        "category": "starters"
-      },
-      {
-        "name": "Goat Cheese Briouates",
-        "desc": "Crisp little triangles drizzled with honey and toasted sesame.",
-        "price": "55 MAD",
-        "category": "starters"
-      },
-      {
-        "name": "Moroccan Salad & Taktouka",
-        "desc": "Fresh tomato-pepper duo and roasted peppers with Ourika olive oil.",
-        "price": "40 MAD",
-        "category": "starters"
-      },
-      {
-        "name": "Harira Fassia",
-        "desc": "Traditional soup of lentils, chickpeas and vermicelli with preserved lemon.",
-        "price": "35 MAD",
-        "category": "starters"
-      },
-      {
-        "name": "Chicken Pastilla with Almonds",
-        "desc": "Golden warqa leaves, farm chicken, toasted almonds, cinnamon and icing sugar.",
-        "price": "140 MAD",
-        "category": "mains"
-      },
-      {
-        "name": "Lamb Tagine with Prunes",
-        "desc": "Lamb shoulder braised for 6 hours, tender prunes, almonds and honey sauce.",
-        "price": "165 MAD",
-        "category": "mains"
-      },
-      {
-        "name": "Kefta Tagine with Eggs",
-        "desc": "Spiced beef meatballs in rich tomato sauce, farm eggs and flat parsley.",
-        "price": "120 MAD",
-        "category": "mains"
-      },
-      {
-        "name": "Seven-Vegetable Couscous (Friday)",
-        "desc": "Hand-rolled semolina, market vegetables, saffron broth and onion-raisin tfaya.",
-        "price": "130 MAD",
-        "category": "mains"
-      },
-      {
-        "name": "Tanjia Marrakchia",
-        "desc": "Marrakech specialty: veal shank marinated in preserved lemon and ras el hanout, clay-pot cooked.",
-        "price": "155 MAD",
-        "category": "mains"
-      },
-      {
-        "name": "Vegetarian Couscous",
-        "desc": "Fine semolina, seasonal vegetables, chickpeas and raisins — 100% plant-based.",
-        "price": "110 MAD",
-        "category": "mains"
-      },
-      {
-        "name": "Cinnamon Oranges",
-        "desc": "Orange supremes with Ceylon cinnamon and orange-blossom water.",
-        "price": "35 MAD",
-        "category": "desserts"
-      },
-      {
-        "name": "Homemade Gazelle Horns",
-        "desc": "Almond and orange-blossom pastries, baked fresh each morning.",
-        "price": "40 MAD",
-        "category": "desserts"
-      },
-      {
-        "name": "Sfenj & Honey",
-        "desc": "Warm Moroccan doughnuts with orange honey and sesame seeds.",
-        "price": "30 MAD",
-        "category": "desserts"
-      },
-      {
-        "name": "Mint Tea",
-        "desc": "Gunpowder green tea with nanah mint from the M'goun, poured Moroccan-style.",
-        "price": "25 MAD",
-        "category": "drinks"
-      },
-      {
-        "name": "Beldi Lemonade",
-        "desc": "Pressed lemon, fresh mint and Atlas spring water.",
-        "price": "30 MAD",
-        "category": "drinks"
-      },
-      {
-        "name": "Avocado-Almond Smoothie",
-        "desc": "Creamy avocado blended with almond milk and a hint of cinnamon.",
-        "price": "35 MAD",
-        "category": "drinks"
-      }
-    ],
-    "note": "Prices in dirhams, taxes included. Vegetarian menu available daily.",
-    "downloadLabel": "Download full menu (PDF)",
-    "viewFull": "View the full menu"
-  },
-  "features": {
-    "title": "Why Choose Us",
-    "items": [
-      {
-        "icon": "terrace",
-        "title": "Panoramic Rooftop",
-        "desc": "Breathtaking views over the medina rooftops and the Koutoubia at sunset."
-      },
-      {
-        "icon": "music",
-        "title": "Live Gnawa Music",
-        "desc": "Every Friday night, Gnawa musicians bring the courtyard to life."
-      },
-      {
-        "icon": "leaf",
-        "title": "Market Fresh",
-        "desc": "Vegetables and spices bought each morning at the souk; 100% halal kitchen."
-      },
-      {
-        "icon": "chef",
-        "title": "Medina Chefs",
-        "desc": "A team of Marrakchi dadas who cook just like at home."
-      }
-    ]
-  },
-  "gallery": {
-    "title": "Gallery",
-    "subtitle": "A glimpse of our tables, dishes and atmosphere"
-  },
-  "reviews": {
-    "title": "What Guests Say",
-    "items": [
-      {
-        "name": "Sarah K.",
-        "origin": "London, UK",
-        "rating": 5,
-        "text": "The best pastilla I've had in Morocco! The staff are lovely and the rooftop is magical at sunset."
-      },
-      {
-        "name": "Omar B.",
-        "origin": "Casablanca, Morocco",
-        "rating": 5,
-        "text": "A truly authentic address. The tanjia marrakchia tastes exactly like my grandmother's. I'll be back as soon as I can."
-      },
-      {
-        "name": "James R.",
-        "origin": "New York, USA",
-        "rating": 4,
-        "text": "Wonderful rooftop dinner — the lamb tagine fell apart at the touch of a fork. Book ahead for Friday couscous!"
-      }
-    ]
-  },
-  "reservation": {
-    "title": "Reserve Your Table",
-    "subtitle": "Confirmed within 2 hours by phone or WhatsApp",
-    "name": "Full name",
-    "email": "Email",
-    "phone": "Phone",
-    "date": "Date",
-    "time": "Time",
-    "guests": "Number of guests",
-    "message": "Special requests (allergies, birthday…)",
-    "submit": "Send Request",
-    "success": "Thank you! We've received your request and will confirm shortly."
-  },
-  "contact": {
-    "title": "Find Us",
-    "addressLabel": "Address",
-    "hoursLabel": "Opening Hours",
-    "phoneLabel": "Phone",
-    "emailLabel": "Email",
-    "directions": "Get Directions",
-    "call": "Call",
-    "whatsapp": "WhatsApp"
-  },
-  "footer": {
-    "tagline": "Authentic Moroccan cuisine in the heart of Marrakech's medina.",
-    "followUs": "Follow Us",
-    "rights": "© 2026 Dar Zellij. All rights reserved.",
-    "madeIn": "Made with ❤️ in Marrakech"
-  },
-  "status": {
-    "open_now": "Open now",
-    "closed_now": "Closed · opens soon"
-  },
-  "marquee": [
-    "Authentic Moroccan cuisine",
-    "Homemade pastilla & couscous",
-    "Mint tea",
-    "In the heart of the medina"
+  "items": [
+   {
+    "name": "Grilled Tomato & Eggplant Salad",
+    "desc": "Smoky grilled tomatoes and eggplant.",
+    "price": "50 DH",
+    "category": "starters"
+   },
+   {
+    "name": "Zucchini & Tomato Salad",
+    "desc": "Fresh zucchini and tomato salad.",
+    "price": "50 DH",
+    "category": "starters"
+   },
+   {
+    "name": "Brania — Lamb with Eggplant Fritters",
+    "desc": "Slow lamb tagine with fried eggplant.",
+    "price": "210 DH",
+    "category": "tagines"
+   },
+   {
+    "name": "Skina — Lamb with Chickpeas",
+    "desc": "Lamb braised with chickpeas.",
+    "price": "180 DH",
+    "category": "tagines"
+   },
+   {
+    "name": "Lamb with Candied Prunes",
+    "desc": "Classic sweet lamb tagine.",
+    "price": "210 DH",
+    "category": "tagines"
+   },
+   {
+    "name": "Meatballs with Tomatoes & Egg",
+    "desc": "Beef kefta tagine, tomato, egg.",
+    "price": "140 DH",
+    "category": "tagines"
+   },
+   {
+    "name": "Lamb Shank with Caramelized Figs",
+    "desc": "Tender shank, sweet figs.",
+    "price": "230 DH",
+    "category": "tagines"
+   },
+   {
+    "name": "Chicken with Preserved Lemon & Olives",
+    "desc": "The Moroccan classic.",
+    "price": "140 DH",
+    "category": "tagines"
+   },
+   {
+    "name": "Chicken with Candied Apricots",
+    "desc": "Sweet-spiced chicken tagine.",
+    "price": "180 DH",
+    "category": "tagines"
+   },
+   {
+    "name": "Lamb Couscous with Vegetables & Candied Onions",
+    "desc": "With vegetables and candied onions.",
+    "price": "180 DH",
+    "category": "couscous"
+   },
+   {
+    "name": "Chicken Couscous with Vegetables & Candied Onions",
+    "desc": "With vegetables and candied onions.",
+    "price": "180 DH",
+    "category": "couscous"
+   },
+   {
+    "name": "Sausage Couscous with Vegetables & Candied Onions",
+    "desc": "With vegetables and candied onions.",
+    "price": "180 DH",
+    "category": "couscous"
+   },
+   {
+    "name": "Vegetarian Couscous",
+    "desc": "Vegetables and semolina.",
+    "price": "120 DH",
+    "category": "couscous"
+   },
+   {
+    "name": "Chicken & Almond Pastilla",
+    "desc": "Crisp warqa, chicken, almonds.",
+    "price": "140 DH",
+    "category": "pastillas"
+   },
+   {
+    "name": "Chicken & Dried Fruit Pastilla",
+    "desc": "With dried fruit.",
+    "price": "140 DH",
+    "category": "pastillas"
+   },
+   {
+    "name": "Chicken & Cashew Pastilla",
+    "desc": "With cashews.",
+    "price": "140 DH",
+    "category": "pastillas"
+   },
+   {
+    "name": "Vegetarian Pastilla — Zucchini, Almonds & Mint",
+    "desc": "With zucchini, almonds and mint.",
+    "price": "130 DH",
+    "category": "pastillas"
+   },
+   {
+    "name": "Vegetarian Pastilla — Potato, Spinach & Cheese",
+    "desc": "With potato, spinach and cheese.",
+    "price": "130 DH",
+    "category": "pastillas"
+   },
+   {
+    "name": "Vegetarian Pastilla — Vegetables",
+    "desc": "With seasonal vegetables.",
+    "price": "130 DH",
+    "category": "pastillas"
+   },
+   {
+    "name": "Cinnamon Oranges",
+    "desc": "Orange, cinnamon.",
+    "price": "50 DH",
+    "category": "desserts"
+   },
+   {
+    "name": "Assortment of Moroccan Cakes",
+    "desc": "Mixed homemade pastries.",
+    "price": "50 DH",
+    "category": "desserts"
+   },
+   {
+    "name": "Chocolate Cake",
+    "desc": "",
+    "price": "60 DH",
+    "category": "desserts"
+   },
+   {
+    "name": "Almond Paw Cakes",
+    "desc": "",
+    "price": "60 DH",
+    "category": "desserts"
+   },
+   {
+    "name": "Nut & Date Pie",
+    "desc": "",
+    "price": "60 DH",
+    "category": "desserts"
+   },
+   {
+    "name": "Almond & Date Pie",
+    "desc": "",
+    "price": "60 DH",
+    "category": "desserts"
+   },
+   {
+    "name": "Mineral Water 1.5 L",
+    "desc": "",
+    "price": "30 DH",
+    "category": "drinks"
+   },
+   {
+    "name": "Mineral Water 0.5 L",
+    "desc": "",
+    "price": "15 DH",
+    "category": "drinks"
+   },
+   {
+    "name": "Sparkling Water 1 L",
+    "desc": "",
+    "price": "30 DH",
+    "category": "drinks"
+   },
+   {
+    "name": "Sparkling Water 0.5 L",
+    "desc": "",
+    "price": "15 DH",
+    "category": "drinks"
+   },
+   {
+    "name": "Sodas 33 cl (Coca, Coca Zero, Orangina, Sprite)",
+    "desc": "",
+    "price": "20 DH",
+    "category": "drinks"
+   },
+   {
+    "name": "Black Coffee",
+    "desc": "",
+    "price": "25 DH",
+    "category": "drinks"
+   },
+   {
+    "name": "Mint Tea",
+    "desc": "",
+    "price": "40 DH",
+    "category": "drinks"
+   }
   ],
-  "reviews_count": "reviews"
+  "note": "Prices in dirhams, taxes included. Vegetarian menu available daily.",
+  "downloadLabel": "Download full menu (PDF)",
+  "viewFull": "View the full menu"
+ },
+ "features": {
+  "title": "Why Choose Us",
+  "items": [
+   {
+    "icon": "terrace",
+    "title": "Panoramic Rooftop",
+    "desc": "Breathtaking views over the medina rooftops and the Koutoubia at sunset."
+   },
+   {
+    "icon": "music",
+    "title": "Live Gnawa Music",
+    "desc": "Every Friday night, Gnawa musicians bring the courtyard to life."
+   },
+   {
+    "icon": "leaf",
+    "title": "Market Fresh",
+    "desc": "Vegetables and spices bought each morning at the souk; 100% halal kitchen."
+   },
+   {
+    "icon": "chef",
+    "title": "Medina Chefs",
+    "desc": "A team of Marrakchi dadas who cook just like at home."
+   }
+  ]
+ },
+ "gallery": {
+  "title": "Gallery",
+  "subtitle": "A glimpse of our tables, dishes and atmosphere"
+ },
+ "reviews": {
+  "title": "What Guests Say",
+  "items": [
+   {
+    "name": "Sarah K.",
+    "origin": "London, UK",
+    "rating": 5,
+    "text": "The best pastilla I've had in Morocco! The staff are lovely and the rooftop is magical at sunset."
+   },
+   {
+    "name": "Omar B.",
+    "origin": "Casablanca, Morocco",
+    "rating": 5,
+    "text": "A truly authentic address. The tanjia marrakchia tastes exactly like my grandmother's. I'll be back as soon as I can."
+   },
+   {
+    "name": "James R.",
+    "origin": "New York, USA",
+    "rating": 4,
+    "text": "Wonderful rooftop dinner — the lamb tagine fell apart at the touch of a fork. Book ahead for Friday couscous!"
+   }
+  ]
+ },
+ "reservation": {
+  "title": "Reserve Your Table",
+  "subtitle": "Confirmed within 2 hours by phone or WhatsApp",
+  "name": "Full name",
+  "email": "Email",
+  "phone": "Phone",
+  "date": "Date",
+  "time": "Time",
+  "guests": "Number of guests",
+  "message": "Special requests (allergies, birthday…)",
+  "submit": "Send Request",
+  "success": "Thank you! We've received your request and will confirm shortly."
+ },
+ "contact": {
+  "title": "Find Us",
+  "addressLabel": "Address",
+  "hoursLabel": "Opening Hours",
+  "phoneLabel": "Phone",
+  "emailLabel": "Email",
+  "directions": "Get Directions",
+  "call": "Call",
+  "whatsapp": "WhatsApp"
+ },
+ "footer": {
+  "tagline": "Authentic Moroccan cuisine in the heart of Marrakech's medina.",
+  "followUs": "Follow Us",
+  "rights": "© 2026 Dar Zellij. All rights reserved.",
+  "madeIn": "Made with ❤️ in Marrakech"
+ },
+ "status": {
+  "open_now": "Open now",
+  "closed_now": "Closed · opens soon"
+ },
+ "marquee": [
+  "Authentic Moroccan cuisine",
+  "Homemade pastilla & couscous",
+  "Mint tea",
+  "In the heart of the medina"
+ ],
+ "reviews_count": "reviews"
 }
